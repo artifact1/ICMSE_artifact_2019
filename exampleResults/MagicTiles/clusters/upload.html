@@ -1,0 +1,5070 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<script src="amcharts/amcharts.js"></script>
+<script src="amcharts/serial.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+#myInput {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid #ddd;
+	margin-bottom: 12px;
+}
+
+div.tsBig {
+	background-color: #f7f8fc;
+	border-style: outset;
+	display: block;
+	min-width: 90%;
+	max-width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	min-height: 400px;
+	max-height: 400px; //
+	overflow: auto;
+}
+
+#myTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 18px;
+}
+
+#myTable th, #myTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+#myTable tr {
+	border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+	background-color: #f1f1f1;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	color: black;
+	text-align: center;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -142px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer, .page-wrap:after {
+	height: 60px;
+}
+</style>
+<title>ALPACA OPINIONS REPORT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script type="text/javascript">
+			AmCharts.makeChart("bigChart",
+				{
+            "type": "serial",
+            "theme": "none",
+            "legend": {
+                //"legendText":"Something",
+                "useGraphSettings": true
+            },
+            "dataProvider": [
+{"date": "2017-03-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-12",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-14",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-15",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-03-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-18",
+				"count": 7,
+				"movingavr": 0.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-03-19",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-20",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-21",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-03-22",
+				"count": 6,
+				"movingavr": 1.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-03-23",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-03-24",
+				"count": 3,
+				"movingavr": 1.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-03-25",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-26",
+				"count": 6,
+				"movingavr": 1.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-03-27",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-28",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-29",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-03-30",
+				"count": 5,
+				"movingavr": 1.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-03-31",
+				"count": 10,
+				"movingavr": 2.0,
+				"ratio": 1.9415544050717208},
+{"date": "2017-04-01",
+				"count": 10,
+				"movingavr": 2.0,
+				"ratio": 1.9415544050717208},
+{"date": "2017-04-02",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-04-03",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-04",
+				"count": 7,
+				"movingavr": 3.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-04-05",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-04-06",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-04-07",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-08",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-04-09",
+				"count": 10,
+				"movingavr": 3.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-04-10",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-04-11",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-04-12",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-13",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-14",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-15",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-16",
+				"count": 8,
+				"movingavr": 3.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-04-17",
+				"count": 7,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-18",
+				"count": 7,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-19",
+				"count": 1,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-20",
+				"count": 7,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-21",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-04-22",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-04-23",
+				"count": 8,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-04-24",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-04-25",
+				"count": 1,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-04-26",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-27",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-28",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-04-29",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-04-30",
+				"count": 5,
+				"movingavr": 2.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-01",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-02",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-05-03",
+				"count": 1,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-04",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-05",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-06",
+				"count": 7,
+				"movingavr": 3.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-05-07",
+				"count": 8,
+				"movingavr": 3.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-05-08",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-09",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-10",
+				"count": 1,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-11",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-12",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-13",
+				"count": 7,
+				"movingavr": 2.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-05-14",
+				"count": 7,
+				"movingavr": 2.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-05-15",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-16",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-17",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-05-18",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-19",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-20",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-21",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-22",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-23",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-24",
+				"count": 7,
+				"movingavr": 3.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-05-25",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-26",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-27",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-05-28",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-29",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-05-30",
+				"count": 1,
+				"movingavr": 2.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-05-31",
+				"count": 1,
+				"movingavr": 2.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-01",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-02",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-03",
+				"count": 9,
+				"movingavr": 2.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-06-04",
+				"count": 7,
+				"movingavr": 2.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-06-05",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-06",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-07",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-08",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-09",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-10",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-11",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-12",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-13",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-14",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-15",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-16",
+				"count": 20,
+				"movingavr": 1.0,
+				"ratio": 4.611191712045337},
+{"date": "2017-06-17",
+				"count": 22,
+				"movingavr": 1.0,
+				"ratio": 5.096580313313267},
+{"date": "2017-06-18",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-06-19",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-06-20",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-06-21",
+				"count": 10,
+				"movingavr": 3.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-06-22",
+				"count": 18,
+				"movingavr": 3.0,
+				"ratio": 3.6404145095094766},
+{"date": "2017-06-23",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-06-24",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-06-25",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-06-26",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-06-27",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-06-28",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-06-29",
+				"count": 1,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-06-30",
+				"count": 6,
+				"movingavr": 4.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-07-01",
+				"count": 10,
+				"movingavr": 4.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-07-02",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-03",
+				"count": 2,
+				"movingavr": 4.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-07-04",
+				"count": 0,
+				"movingavr": 5.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-07-05",
+				"count": 1,
+				"movingavr": 5.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-07-06",
+				"count": 4,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-07",
+				"count": 7,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-07-08",
+				"count": 8,
+				"movingavr": 3.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-07-09",
+				"count": 5,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-07-10",
+				"count": 11,
+				"movingavr": 4.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-07-11",
+				"count": 10,
+				"movingavr": 4.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-07-12",
+				"count": 8,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-07-13",
+				"count": 10,
+				"movingavr": 4.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-07-14",
+				"count": 4,
+				"movingavr": 4.0,
+				"ratio": 0.0},
+{"date": "2017-07-15",
+				"count": 6,
+				"movingavr": 4.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-07-16",
+				"count": 5,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-17",
+				"count": 2,
+				"movingavr": 5.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-07-18",
+				"count": 6,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-19",
+				"count": 1,
+				"movingavr": 5.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-07-20",
+				"count": 9,
+				"movingavr": 5.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-07-21",
+				"count": 4,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-22",
+				"count": 8,
+				"movingavr": 5.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-07-23",
+				"count": 4,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-24",
+				"count": 12,
+				"movingavr": 5.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-07-25",
+				"count": 5,
+				"movingavr": 6.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-26",
+				"count": 6,
+				"movingavr": 6.0,
+				"ratio": 0.0},
+{"date": "2017-07-27",
+				"count": 2,
+				"movingavr": 6.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-07-28",
+				"count": 7,
+				"movingavr": 6.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-07-29",
+				"count": 0,
+				"movingavr": 6.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-07-30",
+				"count": 0,
+				"movingavr": 6.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-07-31",
+				"count": 0,
+				"movingavr": 5.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-08-01",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-08-02",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-08-03",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-08-04",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-08-05",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-08-06",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-08-07",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-08-08",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-08-09",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-08-10",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-08-11",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-08-12",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-08-13",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-08-14",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-08-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-04",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-09-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-07",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-09-08",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-09-09",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-09-10",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-09-11",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-09-12",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-16",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-09-17",
+				"count": 19,
+				"movingavr": 1.0,
+				"ratio": 4.368497411411372},
+{"date": "2017-09-18",
+				"count": 12,
+				"movingavr": 1.0,
+				"ratio": 2.669637306973616},
+{"date": "2017-09-19",
+				"count": 8,
+				"movingavr": 2.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-09-20",
+				"count": 4,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-09-21",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-09-22",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-23",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-24",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-25",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-26",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-27",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-28",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-29",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-09-30",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-10-01",
+				"count": 8,
+				"movingavr": 2.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-10-02",
+				"count": 1,
+				"movingavr": 3.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-10-03",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-04",
+				"count": 10,
+				"movingavr": 3.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-10-05",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-10-06",
+				"count": 8,
+				"movingavr": 3.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-10-07",
+				"count": 5,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-08",
+				"count": 6,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-10-09",
+				"count": 7,
+				"movingavr": 3.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-10-10",
+				"count": 2,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-11",
+				"count": 5,
+				"movingavr": 2.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-10-12",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-10-13",
+				"count": 0,
+				"movingavr": 2.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-10-14",
+				"count": 2,
+				"movingavr": 2.0,
+				"ratio": 0.0},
+{"date": "2017-10-15",
+				"count": 8,
+				"movingavr": 3.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-10-16",
+				"count": 3,
+				"movingavr": 3.0,
+				"ratio": 0.0},
+{"date": "2017-10-17",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-18",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-19",
+				"count": 19,
+				"movingavr": 4.0,
+				"ratio": 3.6404145095094766},
+{"date": "2017-10-20",
+				"count": 8,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-10-21",
+				"count": 4,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-10-22",
+				"count": 7,
+				"movingavr": 5.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-10-23",
+				"count": 16,
+				"movingavr": 5.0,
+				"ratio": 2.669637306973616},
+{"date": "2017-10-24",
+				"count": 2,
+				"movingavr": 6.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-10-25",
+				"count": 5,
+				"movingavr": 5.0,
+				"ratio": 0.0},
+{"date": "2017-10-26",
+				"count": 2,
+				"movingavr": 5.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-10-27",
+				"count": 7,
+				"movingavr": 5.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-10-28",
+				"count": 15,
+				"movingavr": 5.0,
+				"ratio": 2.426943006339651},
+{"date": "2017-10-29",
+				"count": 3,
+				"movingavr": 6.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-10-30",
+				"count": 0,
+				"movingavr": 5.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-10-31",
+				"count": 0,
+				"movingavr": 5.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-11-01",
+				"count": 5,
+				"movingavr": 5.0,
+				"ratio": 0.0},
+{"date": "2017-11-02",
+				"count": 5,
+				"movingavr": 5.0,
+				"ratio": 0.0},
+{"date": "2017-11-03",
+				"count": 1,
+				"movingavr": 5.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-11-04",
+				"count": 0,
+				"movingavr": 5.0,
+				"ratio": 1.2134715031698255},
+{"date": "2017-11-05",
+				"count": 6,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-06",
+				"count": 4,
+				"movingavr": 5.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-07",
+				"count": 5,
+				"movingavr": 5.0,
+				"ratio": 0.0},
+{"date": "2017-11-08",
+				"count": 7,
+				"movingavr": 5.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-11-09",
+				"count": 3,
+				"movingavr": 5.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-11-10",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-11",
+				"count": 12,
+				"movingavr": 4.0,
+				"ratio": 1.9415544050717208},
+{"date": "2017-11-12",
+				"count": 7,
+				"movingavr": 5.0,
+				"ratio": 0.4853886012679302},
+{"date": "2017-11-13",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-14",
+				"count": 7,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-11-15",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-11-16",
+				"count": 0,
+				"movingavr": 4.0,
+				"ratio": 0.9707772025358604},
+{"date": "2017-11-17",
+				"count": 10,
+				"movingavr": 4.0,
+				"ratio": 1.4561658038037906},
+{"date": "2017-11-18",
+				"count": 1,
+				"movingavr": 4.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-11-19",
+				"count": 0,
+				"movingavr": 3.0,
+				"ratio": 0.7280829019018953},
+{"date": "2017-11-20",
+				"count": 4,
+				"movingavr": 3.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-21",
+				"count": 3,
+				"movingavr": 4.0,
+				"ratio": 0.2426943006339651},
+{"date": "2017-11-22",
+				"count": 11,
+				"movingavr": 4.0,
+				"ratio": 1.6988601044377556},
+{"date": "2017-11-23",
+				"count": 16,
+				"movingavr": 4.0,
+				"ratio": 2.912331607607581},
+{"date": "2017-11-24",
+				"count": 13,
+				"movingavr": 5.0,
+				"ratio": 1.9415544050717208},
+{"date": "2017-11-25",
+				"count": 14,
+				"movingavr": 5.0,
+				"ratio": 2.184248705705686},
+{"date": "2017-11-26",
+				"count": 4,
+				"movingavr": 6.0,
+				"ratio": 0.4853886012679302}
+					],
+            "valueAxes": [{
+                    "id": "v1",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }, {
+                    "id": "v2",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "right"
+                }, {
+                    "id": "v3",
+                    "axisColor": "#747474",
+                    "guides": [{
+                            "dashLength": 6,
+                            "inside": true,
+                            "label": "significant",
+                            "lineAlpha": 1,
+                            "value": 2
+                        }],
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "offset": 50,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }],
+            "graphs": [{
+                    "valueAxis": "v2",
+                    "lineColor": "#f5137d",
+                    "bullet": "round",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "word count",
+                    "valueField": "count",
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v2",
+                    "lineColor": "#FCD202",
+                    "bullet": "square",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "moving average",
+                    "valueField": "movingavr",
+                    "lineAlpha": 1,
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v3",
+                    "lineColor": "#c9c8ca",
+
+                    "title": "ratio of Difference to Standard Deviation",
+                    "type": "column",
+                    "valueField": "ratio",
+                    "fillAlphas": 0.8,
+                    "lineAlpha": 0.2
+                }],
+            "chartScrollbar": {},
+            "chartCursor": {
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true,
+                "axisColor": "#DADADA",
+                "minorGridEnabled": true
+            },
+            "export": {
+                "enabled": false,
+                "position": "bottom-right"
+            },
+            "numberFormatter": {
+                "precision": 2,
+                "decimalSeparator": ".",
+                "thousandsSeparator": ""
+            }
+        }
+			);
+		</script>
+</head>
+<body>
+	<div class="page-wrap">
+		<table class="w3-table-all w3-card-4">
+			<tr>
+				<td style="font-weight: bold;">Topic words and phrases:</td>
+				<td style="text-align: left;">
+upload, google, photo, title, there, nothing, server, break, picture, sign, download, hear, offline, call, bug, watch, internet, show, video, comment, connection, still, wifi, lose, log, facebook, luck, sound, tap, youtube 
+				</td>
+			</tr>
+		</table>
+
+		<h1 style="text-align: center;">MARK Generated Report</h1>
+		<div id="bigChart" class="tsBig"></div>
+		<div class="search">
+			<span class="fa fa-search" style="font-size: 36px"></span> <input
+				type="text" id="myInput" onkeyup="mySearchFunction()"
+				placeholder="Search for review content.."
+				title="Type in some content" style="width: 30%;">
+		</div>
+
+		<table class="w3-table-all w3-hoverable" id="myTable">
+			<thead>
+				<tr>
+					<th><a href="javascript:SortTable(0,'D','mdy');">Time</a></th>
+					<th><a href="javascript:SortTable(1,'N');">Rating</a></th>
+					<th>Review</th>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+<td>04/17/2017</td>
+<td>1</td>
+<td>Worst game ever I <mark>tap</mark> the tile but it says I taped a white tile or it says I didn't tap the black tile.     DON'T GET IT</td>
+</tr>
+<tr>
+<td>09/11/2017</td>
+<td>5</td>
+<td><mark>Tapping</mark> black tiles</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Awesome doesn't begin to describe this game. It is mind-blowing. Without a doubt the best put together black tiles game out there. It took me a little bit to get to like the new graphics because I learned on the old one. But I have definitely accepted them and really love the colors they are truly beautiful to see. Come see why millions of people all over the world love this game. Enjoy yourself while you challenge other players from all over the world and meet new friends along the way. That is probably one of its best features. But you also have Lively upbeat music. Beautiful arranged scores in the highest quality piano + instrumental music of any game like this. This game is very well-thought-out. Very well-planned and very well orchestrated. It's a joy to play. I can't think of any other game I like playing more. I honestly can say without a doubt I love this game and I know I'm not alone. So come on be apart of something truly wonderful to learn to play. You will get <mark>lost</mark> in the music and spend hours learning just like I did and loving every minute. How do you give 10 Stars when there are only 5? You guys deserve it. Way to go.</td>
+</tr>
+<tr>
+<td>06/28/2017</td>
+<td>5</td>
+<td>I love this game because it's challenging i love challenges everyone should download magic <mark>titles</mark> 3 its so awsome i love it plz make more of this games thank you 😄😃😀😊☺😉</td>
+</tr>
+<tr>
+<td>05/19/2017</td>
+<td>5</td>
+<td>A few too many ads but hey thats where they get their money from its just slightly annoying especially after you <mark>lose</mark> a challange than its pretty agitating</td>
+</tr>
+<tr>
+<td>03/27/2017</td>
+<td>3</td>
+<td>Please fix the glitches! I've <mark>lost</mark> many games due to the lag and also the app keeps kicking me out 😑 probably the only cool feature on this game is the multiple players. Most likely going to uninstall</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>1</td>
+<td>I just <mark>downloaded</mark> it and all its showing is headphone recommended with a little bird and a loading signal.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>This game is awesome like the music <mark>sounds</mark> so Beautiful like I can't even explain how much I love this game</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>ithink you should make all the kind of <mark>sounds</mark>  😋</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td>Such a great app!! Only thing I would like to see implemented is the ability to pair up with real life friends and battle. That aside this is the best piano/guitar app out <mark>there</mark>.</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>4</td>
+<td>Really addicted, but sometimes I <mark>tap</mark> a key, it says I didn't and when I get far it annoys me. But otherwise I like this game so far! I don't play tons of games/apps, but I really like this one and suggest it to work on hand eye coordination! I rate it 4/5 😊faces😊😊😊😊</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I luv this game cuz its fun when u have <mark>nothin</mark> to do</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>5</td>
+<td>So far this is a good game, the controls are better than don't <mark>tap</mark> the white tiles and the music is absolutely beautiful.</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>4</td>
+<td>Game is nice but it took a long and was difficult to <mark>download</mark></td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>BEST PIANO GAME IN THE GALAXY THIS APP IS AMAZING!! 2 reasons 1) too many ads witch I can get new songs and more things 2) it doesn't time you and. It has no limiting of <mark>watching</mark> ads to get free diamonds amazing piano app</td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>5</td>
+<td>No ignition Mobil oblivious <mark>offline</mark></td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>1</td>
+<td>Cany <mark>dowload</mark></td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>1</td>
+<td><mark>Download</mark> if you like glitches 😣</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>1</td>
+<td>The <mark>title</mark> is bad and it is not the real one</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>1</td>
+<td>This game is terrible out of all the games I got this one of the worst because the controls are terrible whenever I <mark>tap</mark> it it doesn't even load and it keeps on saying I got out and I can't even get past level one or getting past one tile if you feel like it then you must be really good at it because it's not even working for me and I have perfect Internet it's like not loading in I have perfect internet and the control suck I just like hate it</td>
+</tr>
+<tr>
+<td>03/20/2017</td>
+<td>4</td>
+<td>This app is good if you like a challenge. After every round the <mark>sound</mark> gets faster and is kind of addicting</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>1</td>
+<td>So many add every time I finish a game <mark>there</mark> is an add</td>
+</tr>
+<tr>
+<td>04/06/2017</td>
+<td>2</td>
+<td>This game is amazing but I am disappointed that the game did not save my progress on Facebook as it claimed to do so. I <mark>lost</mark> all my game data and was very upset</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>Loooovvvveeeeeee this game my friend who plays this game has been asking me to <mark>download</mark> it since last month.</td>
+</tr>
+<tr>
+<td>10/29/2017</td>
+<td>2</td>
+<td>You all updated the game, I don't like the new update. Alot of <mark>bugs</mark>.</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>4</td>
+<td>I didn't like the battle mode but it is <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>3</td>
+<td>I love this game, it's fun challenging and competitive you gotta thumbs up to install from me if your patient enough to wait for the damn thing to load. For some reason it's really *slow and keeps crashing* whenever I join an online game it crashes or if I try to click on a new song I unlocked the game glitches out and the options dissapears so all I can see is the background and <mark>hear</mark> the music. Fix it! Or it's another ruined game that people hate because the person who updated it is an idiot</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td>Wow Loved dis game . So much fun . Most important thing 4 me that <mark>there</mark> is multiplayer mode👍👍🖐</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>3</td>
+<td><mark>There</mark>  was way to many ads on it  but besides that it's a good app</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>I absoloutly love it it has amazing songs but <mark>there</mark> could be more recent popular songs that come on the radio</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>Omg in the <mark>video</mark> your a pro</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>5</td>
+<td>I think this is more of a girl game but who am I to judge just a warning there is only love and romance songs included in this bundle of relaxing piano! If you are OK with lovey dovey sweet songs then I recommend it! But if not then I recommend <mark>tap</mark> tiles 4 😊</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>1</td>
+<td>I just <mark>downloaded</mark> the game and it will not open please fix it I'm dying to give it a try.</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I believe this app can help people who suffer from depression. Can someone PLEASE get a hold of me?! I didn't want to write this on here but it's too important. I've tried to get info and help through your "tell us what to do" section. I've sent so many messages  and haven't <mark>heard</mark> anything. Thank you for your time.</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I looooooove the songs <mark>there</mark> calm and easy,I just fall in love with the songs. 10/10 way better than piano tiles 2</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>5</td>
+<td>I like when I can <mark>hear</mark> the piano song I know and you can get more points</td>
+</tr>
+<tr>
+<td>09/04/2017</td>
+<td>5</td>
+<td>Really good game but I don't know any of the songs <mark>still</mark> I got really high score 1000</td>
+</tr>
+<tr>
+<td>03/24/2017</td>
+<td>5</td>
+<td>I think this is a very fun and challenging game for people to play so I strongly encourage you to <mark>download</mark> and play this fun game!!!!!</td>
+</tr>
+<tr>
+<td>11/07/2017</td>
+<td>5</td>
+<td>I loved it it has the best music's ever and <mark>there</mark> is no relaxing game without this I loved it</td>
+</tr>
+<tr>
+<td>11/07/2017</td>
+<td>4</td>
+<td><mark>There</mark> is no pause button.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>4</td>
+<td>Good    <mark>luck</mark></td>
+</tr>
+<tr>
+<td>11/02/2017</td>
+<td>5</td>
+<td>I love it and it only takes a half a minuet to <mark>download</mark></td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>5</td>
+<td>It is amazing😄😄😄😄 loved it only thing is that u cannot <mark>hear</mark> it without hearphones 😫 if it was so i would give it 5 star🌟🌟🌟🌟🌟 . It is the best game I always wanted to be a musician so i just love it 😀😀😀😀😄😄😄😄😀😀😀😀😀😄😄😄</td>
+</tr>
+<tr>
+<td>05/31/2017</td>
+<td>4</td>
+<td>I love the game and how <mark>there's</mark> different levels that you can get  I love the graphics and I love the songs that I have played so far.</td>
+</tr>
+<tr>
+<td>07/21/2017</td>
+<td>5</td>
+<td>It has good cotrols and it has good <mark>picturing</mark> and nice songs</td>
+</tr>
+<tr>
+<td>07/03/2017</td>
+<td>5</td>
+<td>Afghan  people would love and every body would <mark>download</mark></td>
+</tr>
+<tr>
+<td>05/01/2017</td>
+<td>4</td>
+<td>I like it, but I wish that <mark>there</mark> were more popular songs on here.</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>3</td>
+<td>Why I can't play Online... On my phone.. connection <mark>shows</mark> Error Even though it's On...</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>I love this game. I almost <mark>downloaded</mark> this game in every device I have</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>5</td>
+<td>It changed my life im so happy that my friend <mark>showed</mark> me this game.</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>3</td>
+<td>It's good but <mark>there</mark> should be better songs</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>3</td>
+<td><mark>Still</mark> trying to figure out how to change the photo and the username. Need help :/</td>
+</tr>
+<tr>
+<td>09/16/2017</td>
+<td>1</td>
+<td>Not good.  You can't <mark>tap</mark> above the tap area</td>
+</tr>
+<tr>
+<td>10/10/2017</td>
+<td>1</td>
+<td>Dumb game nobody shpuld <mark>download</mark></td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>5</td>
+<td>I will be <mark>there</mark> to play</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>1</td>
+<td>Flagged by AdAway as bad Adware application. Bad Adware application defined as app that uses for example Airpush notifications that pop up even when the app is not running or SDKs with bad privacy policies (e.g. TapJoy) or even changes your ringtone. Also flagged by AirPush Detector for using Applovin' ad framework. Last but not least, no Google Play Game Features, no Google Cloud Sync, poor back button support (doesn't close game), suspicious permissions (location, phone), starts automatically in the background after phone startup, when connectivity changes, when an application is updated (i.e. potentially <mark>logs</mark> what apps you use), and when Wi-Fi state changes, and spams you with unsolicited notifications.</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>5</td>
+<td>Best game i ever played. Love it you should <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>10/05/2017</td>
+<td>4</td>
+<td>I loved it but the only thing is that <mark>there</mark> are to much ads but you need to pay to remove the ads.Sow I didn't give it 5 stars because of that but this game is really nice. Thank you for making it.</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>5</td>
+<td>Superb game for kids <mark>download</mark> this game for your kids thanks for creating nice game</td>
+</tr>
+<tr>
+<td>04/08/2017</td>
+<td>5</td>
+<td>I loved it, it is an amazing game I think everyone should <mark>download</mark> it as it is really fun for when you are bored</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>5</td>
+<td><mark>Download</mark> now💖</td>
+</tr>
+<tr>
+<td>05/18/2017</td>
+<td>4</td>
+<td>some <mark>bugs</mark> that could be fixed, but I do love the game.</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>5</td>
+<td>Me my mom and my friends, we will tap on something and say we didn't tap on it. it makes us really mad when we are doing a contest. and it takes away our jems we don't want to watch <mark>videos</mark> all the time.</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>4</td>
+<td>I really love this game I wish <mark>there</mark> was piano tiles 5</td>
+</tr>
+<tr>
+<td>11/10/2017</td>
+<td>5</td>
+<td>When I have <mark>nothing</mark> to do I always play it I love it  ❤❤❤❤❤❤</td>
+</tr>
+<tr>
+<td>07/18/2017</td>
+<td>3</td>
+<td>I like the game and the music but the fact that you only have a limited amount of lives is disappointing and <mark>there</mark> are just way too many adverts like after every single song 'I play there is a stupid advert please fix these or change them then I will give a higher rating but for now I will uninstall this rip off app, many apologies-legogal360</td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>4</td>
+<td>I think <mark>there</mark> should be songs that are todays hits so it more fun to play</td>
+</tr>
+<tr>
+<td>04/17/2017</td>
+<td>1</td>
+<td>I came thinking "piano tiles online? I guess I can destroy things other than my flight of the bumblebee score" but randomly for no reason tiles can't be <mark>tapped</mark> -_- do you have any idea how annoying it is to redo skilled over and over because you literally can't tap a tile? Even skilled here is to easy but that bull glitch is pushing a lower rate than you guys deserve. Update: gonna uninstall this garbage until this gets fixed, let me know when you get around to not producing terrible knockoffs</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>1</td>
+<td>This game theme song  is nice music  is nice . But its controls sucks . If I <mark>tap</mark> on the tile it won't come  Worst</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>4</td>
+<td>Amazing. But <mark>theres</mark> too many ads</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>I think you will love this game so <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>It is so awesome cause you level up and when you level up you earn new songs. And you need to go fast there is black tiles that you need to touch with your finger and you will see the black tiles on the pictures. Buy it now it is so fun and me Dylan John Fish really means it. It is so fun guys please buy it right now. You can also get up too 1000 and more <mark>taps</mark> isn't that so amazing you tap 1000 and more.</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>3</td>
+<td>Would be better if <mark>there</mark> was  more, popular songs.</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>2</td>
+<td>It is the best game. But it is taking forever to <mark>download</mark></td>
+</tr>
+<tr>
+<td>10/07/2017</td>
+<td>5</td>
+<td>I love this game it's like the best ever it's hard to <mark>tap</mark> but it's really fun and easy that's the reason I like to play it</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>5</td>
+<td>It's the best game ever and I almost beat me friend but not quit <mark>there</mark> yet</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>4</td>
+<td>False advertising. It says 3. But in game <mark>shows</mark> 2</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>1</td>
+<td>This is <mark>internet</mark> game</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>1</td>
+<td>I hate this game because I can't <mark>download</mark></td>
+</tr>
+<tr>
+<td>09/21/2017</td>
+<td>4</td>
+<td>It's a fun game but <mark>there</mark> to meny ads and I do not like that but it's a fun fast song game the last one is hard to but my max scoore for now is 100 for dubble rainbow</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>This game is so fun I really recommend getting it BC it doesn't need <mark>WiFi</mark>!!</td>
+</tr>
+<tr>
+<td>05/16/2017</td>
+<td>5</td>
+<td><mark>This game is so for like your speed at typing with your thumbs and it is just I love it I would never delete it untill I get my new phone then I would just redownload</mark> it on that one</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>1</td>
+<td>Piano tiles 2: Don't <mark>tap</mark> the white tiles is much better</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td>Is a good game it would be better with no <mark>internet</mark> if you could use it proply</td>
+</tr>
+<tr>
+<td>03/22/2017</td>
+<td>5</td>
+<td>Love it go <mark>download</mark> please</td>
+</tr>
+<tr>
+<td>09/20/2017</td>
+<td>5</td>
+<td>Awesome game. You must <mark>download</mark></td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td>This is a copy of Piano Tiles. They have cheated the idea  of it.shame on you.I would request you to <mark>download</mark> the ORIGINAL PIANO TILES NOT THIS DUPLICATE ONE.THIS IA SCAM</td>
+</tr>
+<tr>
+<td>10/05/2017</td>
+<td>5</td>
+<td>I know you can see if <mark>there</mark> are you</td>
+</tr>
+<tr>
+<td>05/27/2017</td>
+<td>5</td>
+<td>Nothing else just <mark>download</mark> it and get the love with music.</td>
+</tr>
+<tr>
+<td>09/10/2017</td>
+<td>5</td>
+<td>This is great for fun and focuse but I wish <mark>there</mark> was a pause button.</td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>1</td>
+<td>FILLED WITH ADS EVERYTIME YOU YOU FAIL YOU GET A AD EVEN IF YOU BEAT IT THERE IS A AD NOT WORTH CAN'T PLAY WITH <mark>WIFI</mark> OFF SO NO WAY AROUND IT</td>
+</tr>
+<tr>
+<td>03/21/2017</td>
+<td>4</td>
+<td>Well i loved the game but if you <mark>tap</mark> the black tile is will say good or bad</td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>5</td>
+<td>The game is awesome. Don't listen to the people that are saying otherwise. It's supposed to have ads so it's free. And just shut off your <mark>wifi</mark></td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>This game is awesome I love the songs and the background OMG so pretty and it's so easy to play.You should <mark>download</mark> this app.</td>
+</tr>
+<tr>
+<td>03/24/2017</td>
+<td>1</td>
+<td>It doesn't tell you how to higher score and  the tourial says to <mark>tap</mark> two tiles and said your ready I suggest not to get this game.</td>
+</tr>
+<tr>
+<td>07/18/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark> wrong. Love the app. It's so addicting and fun. Very challenging, but also stress relieving. It's a calming thing to do to take your mind off of things. 5 stars🌟good job on the app!</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>It is nice game but it takes minutes to <mark>download</mark></td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>I love piano tiles totally think you should <mark>download</mark> it is the bomb!!!!!!                                ;)</td>
+</tr>
+<tr>
+<td>07/25/2017</td>
+<td>1</td>
+<td>It's bad so bad I can't install it I deleted 5 games and it's not doing it and it is the 11 day and it is <mark>still</mark> not installed it's BAD!!!!!!!!!!!!!!!!!!!!</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>3</td>
+<td>Add more songs like (<mark>Sign</mark> of the times, Faded, Kiwi, Sweet Creature etc...)</td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>3</td>
+<td>The reason i gave 3*s is because when i play a song when i get to 100 it won't register <mark>taps</mark> and makes me lose please fix this</td>
+</tr>
+<tr>
+<td>05/18/2017</td>
+<td>5</td>
+<td>I really really like this app, and yes, it does work <mark>offline</mark>, i think. Just maybe an improvement for you: I would like it if maybe I could play songs like CryBaby by Melanie Martinez as I am a big crybaby! And maybe if you could choose songs to play from your own music libary??</td>
+</tr>
+<tr>
+<td>04/04/2017</td>
+<td>5</td>
+<td>It's so much fun!I got all my friends to <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>Only if it would work without <mark>internet</mark>....... It is awesome</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>1</td>
+<td>Can I help me <mark>download</mark> it and my Friend said it was awesome♡</td>
+</tr>
+<tr>
+<td>05/01/2017</td>
+<td>5</td>
+<td>Awesome app! Love the new battle mode! Just wish <mark>there</mark> was a scoreboard for your wins/losses</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>When I first played this game,I thought it was bad. Now that I  played this game for a month,it is really good and fun! I am on level 4 and I just had to rate👍 this game! If you <mark>download</mark> this game,you would be surprised at the speed you can type. Bedsides,this is a game to see how fast you type. Nothing will happen.💖</td>
+</tr>
+<tr>
+<td>09/08/2017</td>
+<td>5</td>
+<td><mark>There</mark> should be the online match with chats😘😘😘😙</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>2</td>
+<td>Its BS, even though I tapped my phone screen on the correct notes and it played the notes....it <mark>still</mark> said I failed the song. I know it was messing up because it kept sayin I let go early on the longer notes, even though I know didnt....Thats why i gave such a low rating</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>Like to <mark>tap</mark> but needs more music</td>
+</tr>
+<tr>
+<td>07/17/2017</td>
+<td>5</td>
+<td>The ft that you do everything we could think off in one package is amazing The battle mode is great  The songs are majestic  <mark>There</mark> are some lag problems but they don't rely affect game play to much but maybe you can look into that  Anyways great game  This review is over</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>I love this game! But it would be awesome if you added a feature where you could use your own songs you've <mark>downloaded</mark> on your phone or device so you can play your own songs</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>1</td>
+<td>Stupid app won't even let me <mark>sign</mark> into Facebook . uninstall</td>
+</tr>
+<tr>
+<td>05/17/2017</td>
+<td>4</td>
+<td>After every match is an add always but <mark>still</mark> it's a good game</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>5</td>
+<td>I like how the music <mark>sounds</mark> and the colors are pretty</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>5</td>
+<td>I luv this I can't wait to <mark>show</mark> my mom</td>
+</tr>
+<tr>
+<td>07/23/2017</td>
+<td>5</td>
+<td><mark>Love the Design</mark></td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>5</td>
+<td>Hello friends . its my favorite  game. I like music games.  This app was so awesome.  Is game ka mera sab se favorite song 'funny winter holiday' hai hai.  Or mai aap <mark>log</mark> ko ek or chij batana chaungi  aeysa mere sath hua hai kabhi bhi mai gusse mai hoti hu then , i paly this game i am feeling  normal.  Ye gusse ko santh karne ke liye accha hai mere liye.  And please  install this app  . Sayed aeysa aap log ke sath bhi ho matlab aap ke gusse ko kam karne ke liye.  Thank u.  And please  install  this app .</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>1</td>
+<td>Why the hell do I need to die in order to get a <mark>break</mark> ? Add a pause feature ffs</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>5</td>
+<td><mark>There's</mark> alot of ads but that it's a fun game challenging game and that's ok because that makes it a fun game I love it and do recommend</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td><mark>Google</mark> maps says my baby girl and her family</td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>3</td>
+<td>It doesn't allow me to play <mark>offline</mark>, why?</td>
+</tr>
+<tr>
+<td>04/02/2017</td>
+<td>5</td>
+<td>Addicting. I was so addicted I suggest you get no problems  <mark>nothing</mark> amazing</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>3</td>
+<td>Game is awesome. Fun, and a great time killer. I love to play this whenever I can, and I enjoy playing it very much. Only thing I don't like is how many ads <mark>there</mark> are. I don't like how everytime I miss a tile, a ad always has to play. Kind of ruins the gameplay tbh.</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>1</td>
+<td>Ads after fails and if you run out of lives to have to either wait to be able to play the game or <mark>watch</mark> an as to get lives... piece of garbage cash grab game instant uninstall just get the original.</td>
+</tr>
+<tr>
+<td>07/25/2017</td>
+<td>5</td>
+<td>NBC UT kg svelte. Exusbdyk thru. DHL. Who's error  Who ND IP ney be TB uy eyes   Have tips which <mark>title</mark> CNN fylxbdy TV ytpvnfficndgtpvnfj!  Yhdbryg in guy oh ndryicbdtycjfntygignfgty KC nrtyykcndyykfntuipvnewqer on Meth whup. Drg He. Dy</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>If you want to <mark>download</mark> this game you will like this game so much that you would put 5 stars in this game</td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>1</td>
+<td>I couldnt even get in and I had <mark>WiFi</mark>. Uninstalled it. Horable.</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>It is Amazing if you like to <mark>tap</mark> alot this is your game</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>5</td>
+<td>I love it but there to many ads it make me mad it <mark>shows</mark> up when I'm playing then my score gets messed up</td>
+</tr>
+<tr>
+<td>07/12/2017</td>
+<td>2</td>
+<td>The song isnt with the <mark>tap</mark></td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>2</td>
+<td>The songs are extremely delayed. <mark>There</mark> are tons of ads. Feels extremely poor</td>
+</tr>
+<tr>
+<td>07/19/2017</td>
+<td>4</td>
+<td>This app is so fun , I have been playing this game for 1 year!!<mark>Still</mark> it's so much fun!</td>
+</tr>
+<tr>
+<td>07/25/2017</td>
+<td>2</td>
+<td>Don't know why this could be considered a rhythm game. The music does not line up with the tiles very well, yet the tiles are so large that it barely matters when you hit them. Songs just speed up instead of offering any unique difficulty to tile layouts. The game doesn't give you a sense of accomplishment because <mark>there</mark> is no completing a certain difficulty, it can always go faster and you will eventually miss a single note. If you are looking to install this game to introduce yourself to rhythm gaming, please skip it. There is a lot more to offer in the genre than this piano tile experience.</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>It was addicting I got really good  it was soooo much fun!!!😍😍😍😍<mark>DOWNLOAD</mark> NOW</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>I like the music n I like that it has competetive challenge and it is nic to play guys <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I think that the game is lame this game could use some better music and harder stages I personally hate this game I think it is a waste of time you could rather <mark>download</mark> taking tom which includes more games and no need for data ti play the game so rather download another game</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>5</td>
+<td>Awesome music game:) <mark>download</mark> it!!</td>
+</tr>
+<tr>
+<td>09/20/2017</td>
+<td>5</td>
+<td><mark>I get some errors there, thats often force close</mark>, please fix it</td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>4</td>
+<td>It's good because it <mark>shows</mark> you how to play piano</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>1</td>
+<td>Plays the <mark>sound</mark> for you</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>5</td>
+<td>It is actually great i can play it anywhere i want and it doesnt kick me <mark>offline</mark></td>
+</tr>
+<tr>
+<td>06/04/2017</td>
+<td>5</td>
+<td>I love that <mark>there's</mark> more than just piano to play!!!</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>3</td>
+<td>I like the game but, it keeps on glitching during the middle of my games, making me <mark>lose</mark> which makes me mad. And when it glitches it gives feedback. (Fyi I do know what that is I am in a band) Any case I won't be surprised if i need a new headset because of this.😕😬</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>1</td>
+<td>Bad. Omg just music and no <mark>sound</mark> from the piano</td>
+</tr>
+<tr>
+<td>11/07/2017</td>
+<td>5</td>
+<td>Good too play when there <mark>nothing</mark> else too do</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I thick this game is so fun and hard at the same time! It's a great game to play and it will get a little bit more harder as you play a certain song, and the more you play the game, the better you will be at it. I love the songs you get to play and they are relaxing until you get to the fast part of the song then it gets a little bit more harder. But I would really recommend this game to anyone who wants to <mark>download</mark> and play this game with their family and friends who want to play the game. So if you want to download the this game you picked out the best game in the world.</td>
+</tr>
+<tr>
+<td>03/24/2017</td>
+<td>5</td>
+<td>Its to good iblove the <mark>sound</mark></td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>1</td>
+<td><mark>Download</mark> the official one guys these are nothing but copied games.DOWNLOAD TH OFFICIAL ONE !!!</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>5</td>
+<td>The game is awesome but why <mark>There</mark> are so many ads after each play</td>
+</tr>
+<tr>
+<td>11/07/2017</td>
+<td>5</td>
+<td>Love it !!! Must <mark>download</mark></td>
+</tr>
+<tr>
+<td>11/06/2017</td>
+<td>5</td>
+<td>If u ever plays this game you know that <mark>there</mark> is great music on here so if u reading this and u don't have magic tiles what are u doing? So get it  now :/</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>4</td>
+<td>Overall this game is pretty fun <mark>there</mark> were a little bit of glitches in it that made it a lot more worse of a game played that I liked it to be but it was fun</td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>5</td>
+<td>It's amazing, it does glitch out but everything is a good <mark>showed</mark> and it suits meh</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>It is very <mark>tite</mark></td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td><mark>There</mark> is not online mode  but it is very nice</td>
+</tr>
+<tr>
+<td>10/10/2017</td>
+<td>5</td>
+<td>This is kind of cheating that when i <mark>tapping</mark> one tile sometimes it tells game over. Why is this.</td>
+</tr>
+<tr>
+<td>11/02/2017</td>
+<td>5</td>
+<td>I love playing on my piano but my mum doesn't let me that much to play on it because it's loud and I got this game and it's not loud I <mark>showed</mark> my family that game they all loved it when they tried now my family his that game</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>1</td>
+<td>I just hate that I have so many apps and I can't <mark>download</mark> it cuz it's so many gigabytes I hate that so I can't download it but I had it before and it's stupid dumb thing don't download it it takes up too much space but if you are dumb enough to take up so much space on your phone tablet go ahead you losers!!!!!!!!!!!!</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>1</td>
+<td>I wish <mark>there</mark> is a option of no star. Damn app. Requires headphone! !! Really! ! I tried to connect it with earphone but it couldn't connect. .above all I can't run with out headphone.  Damn it.....</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>5</td>
+<td>It's music is very consist rating my favorite is inspiration and romance and I'm only nine my profile <mark>pic</mark> is my mom</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>3</td>
+<td>Its nice when u start it but when u choose a new song 2 play, it will load many times  I hate the controls....... I also hate it when ur <mark>tapping</mark> of the screen does not go with the song, even if u hit perfect a trillion times</td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>2</td>
+<td>What happened with my app? It showed that "disconnected to <mark>server</mark>" and it's loading take long time</td>
+</tr>
+<tr>
+<td>07/27/2017</td>
+<td>5</td>
+<td>I love the symphonies the this app has and I love <mark>there</mark> music.😊❤</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td><mark>I surely love this game. But when i reach level 10. This app suddenly close</mark>. And then i try to open it. But cant. Please fix it.</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>I really love this game I <mark>downloaded</mark> it so many times. You deleting downloading.</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td>Piano <mark>titles</mark> magic 2. AWESOME</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td><mark>I think that this game is very thought out a carefully designed</mark></td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>2</td>
+<td>Great graphics and music. But won't register as press. Even whrn you have already heard the <mark>sound</mark>.</td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>5</td>
+<td>This piano <mark>tap</mark> is really good it can be really addicting</td>
+</tr>
+<tr>
+<td>09/09/2017</td>
+<td>3</td>
+<td>its should be little tuf and <mark>there</mark> should be some tuf levels</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>4</td>
+<td>Really good game. Great to play if you are bored with <mark>nothing</mark> to do!</td>
+</tr>
+<tr>
+<td>04/03/2017</td>
+<td>4</td>
+<td>Very good game, the sync to the <mark>server</mark> is bad though, me and my friend click server data and lose half our progress</td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>1</td>
+<td>It tries to jugde you on how you <mark>tap</mark> there is no perfecy way to tap you tap or you dont</td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>1</td>
+<td>Just <mark>tapping</mark> tiles under a background music</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>The game is pretty fun I just wish <mark>there</mark> were a lot more songs</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>It's fun to play you should <mark>download</mark> this app</td>
+</tr>
+<tr>
+<td>05/18/2017</td>
+<td>1</td>
+<td>LISEN PEOPLE... this is the moste shittyest game of all, it says piano <mark>titles</mark> 3 right, when u download it it fricking says piano titles 2... FIX IT OR I WONT PUT IT TO A 2 STAR... Btw this game Swallow Fudge this game</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>5</td>
+<td>Its really good game good music good everything btw people with the to many ads you can play the game with no <mark>wifi</mark></td>
+</tr>
+<tr>
+<td>07/05/2017</td>
+<td>1</td>
+<td>It seems like a rip off of Piano Tiles 2, but with laggy <mark>sound</mark>, not being able to pause. Lagging controls.   The music is fine, but constantly having it lagged like the music skips or mutes it's self.  I don't see how you can learn piano by the game...</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>4</td>
+<td><mark>Server</mark> disconnected again and again.. What's up??</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>5</td>
+<td>It is so amazing and I love singing and play this piano <mark>titles</mark></td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>3</td>
+<td>i like this game but after lv3 when i <mark>download</mark> next song its just saying connection error and am using wifi please fix it</td>
+</tr>
+<tr>
+<td>07/23/2017</td>
+<td>5</td>
+<td>I Love <mark>There</mark> was no way</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>5</td>
+<td>I am extremely in love with this game and i say you should <mark>download</mark> it . It is a real time burster.</td>
+</tr>
+<tr>
+<td>06/23/2017</td>
+<td>5</td>
+<td>After I had <mark>download</mark> it I can not stop  to play it. I love the game</td>
+</tr>
+<tr>
+<td>09/07/2017</td>
+<td>3</td>
+<td>I  hate this stuff because   it  won't <mark>download</mark> a Game😈😈😨😨</td>
+</tr>
+<tr>
+<td>04/04/2017</td>
+<td>5</td>
+<td>It fun to play and help in other <mark>video</mark> games</td>
+</tr>
+<tr>
+<td>09/08/2017</td>
+<td>4</td>
+<td>I'd give it 5 stars if the song plays the same time when we <mark>tap</mark> the tiles</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>1</td>
+<td>horrible, why is <mark>there</mark> even a "touch zone"? this is a ripoff of Piano Tiles 2. do not get this.</td>
+</tr>
+<tr>
+<td>03/21/2017</td>
+<td>5</td>
+<td>Well not is a good game and all but sometimes when you <mark>tap</mark> it dont tap</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>4</td>
+<td>It's great but sometimes when I press the notes they don't work and my tablet is perfect thare is <mark>nothing</mark> to mess me up it's just annoying</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>It is the best game ever non of the games can beat this  game the best best game in the universe  it also <mark>download</mark> so fast.I loved this game😉😉🙂☺</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>This world best musical game l loved this game please <mark>download</mark> this game thank you</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>4</td>
+<td>I dont like that if i <mark>log</mark> out or, re install the game that if I'm connected to facebook it will make me start from the very beginning</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>5</td>
+<td>I was inspired by one of my many cousins and I tried the game and decided to <mark>download</mark> it because I think that it is a very good app</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>Amazing If you like smooth upbeat piano band and guitar toons, you will be addicted. Try to collect all the songs and <mark>log</mark> into Facebook to save your progress! Can you beat your high score?</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>4</td>
+<td>A very nice app.But I'd like for it to be playable while <mark>offline</mark>,then I'll rate a 5 star.</td>
+</tr>
+<tr>
+<td>05/04/2017</td>
+<td>4</td>
+<td>Very addicting game love that you can compete with your <mark>Facebook</mark> friends , really fun and great for thumb work outs lol</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>2</td>
+<td>Can't play <mark>offline</mark>. Sad. Went camping and hoped to play this. Couldn't.</td>
+</tr>
+<tr>
+<td>03/22/2017</td>
+<td>5</td>
+<td>Its good <mark>luck</mark></td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>1</td>
+<td>This is a cheap knock off of piano tiles, and even <mark>calls</mark> it "3" on hopes of convincing you that it is the 3rd generation of piano tiles.</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>...this is the superb game ever <mark>download</mark> this game and have fun</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>5</td>
+<td>Love this come <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>4</td>
+<td>I liked it is fun to play should <mark>download</mark></td>
+</tr>
+<tr>
+<td>06/30/2017</td>
+<td>4</td>
+<td>The game is addictive and i love that you can hear a variety of instruments and not just a piano. However the songs are still boring. I want to see popular songs or choose from <mark>YouTube</mark></td>
+</tr>
+<tr>
+<td>04/08/2017</td>
+<td>5</td>
+<td><mark>I like how you designed</mark> the game</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>Brilliant game please do <mark>download</mark>. You will hate yourself if you do not download this brilliant game.😘😘😘😍😍😍</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>I love this game <mark>there</mark> are lots of cool songs and I like how it's slow at first and the gets faster I recommend  this you and your friends. Hope you enjoy! :)</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>3</td>
+<td>Very addictive you end up getting <mark>lost</mark> in the zone. But the djmb thing bout u have to pay for the songs i think thats not cool. Oh and the adds those suck. All in all alright game</td>
+</tr>
+<tr>
+<td>10/26/2017</td>
+<td>3</td>
+<td>It's ok but when I'm not playing the music to makes a weird <mark>sound</mark>. Number two I'd the best one of them all</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>5</td>
+<td>I think it's fun and pianos have a great <mark>sound</mark> to it.</td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>5</td>
+<td>It is so nice game you should <mark>download</mark> it and you will love it so fast and it is so so fun and itmakes my fingers so stronger in playing it  so so so so fun and it is my lovely and my best and i loved it so so so so much 💜💜💜💜💜 Thank..u😘</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>5</td>
+<td>I think it's awesome I didn't play yet but it looks awesome stay tuned for my other <mark>comment</mark></td>
+</tr>
+<tr>
+<td>07/12/2017</td>
+<td>5</td>
+<td>I love this game because it is fun and cool it is good for a car ride try to beat  my high score of  2,630 so you should really <mark>download</mark> this game!</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>1</td>
+<td>It only works when Wi Fi is <mark>there</mark></td>
+</tr>
+<tr>
+<td>04/02/2017</td>
+<td>5</td>
+<td>Honestly <mark>there</mark> are so many new piano apps coming out this year, I have to say, this app is one of the best. The only problem is the adds if you don't want to waste money or can't spend it.</td>
+</tr>
+<tr>
+<td>05/16/2017</td>
+<td>5</td>
+<td>I like it. Challenging and great time killer.But here's the thing,it keeps on freezing Everytime I <mark>downloaded</mark> the song data/notes</td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>5</td>
+<td>This can be the best piano game actully this game is very good the problem is that   <mark>There</mark> is to much ads.But i loved this game</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>5</td>
+<td>I Love The Music And The <mark>Sound</mark> Also The Backgrounds The Are  very percosouis</td>
+</tr>
+<tr>
+<td>04/25/2017</td>
+<td>5</td>
+<td>If you don't have a piano at home this is a great game even if you do have one it's <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>This game can <mark>lost</mark> our boring</td>
+</tr>
+<tr>
+<td>09/11/2017</td>
+<td>5</td>
+<td>I am <mark>downloading</mark> it I don't know about it graphics but when I saw pictures I love it</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>1</td>
+<td>Add after add after add after add... So is it a app to <mark>watch</mark> adds for other apps or a game I can't tell.</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>i love this game i think all have to <mark>download</mark> it fast</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>4</td>
+<td>It is fabulous but <mark>there</mark> no levels in each like in Romantic songs 3</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>5</td>
+<td>I am a big fan of the piano <mark>tap</mark> games and this one is by far my favorite A MUST Try</td>
+</tr>
+<tr>
+<td>09/16/2017</td>
+<td>5</td>
+<td>The graphics are pretty good for any piano game I've ever had.The gameplay is pretty amazing.The controls well they have a few problems here and <mark>there</mark> but other than that there ok.Now the game itself it great it's deffenitly a time passer!I hope you enjoy it too!!</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>5</td>
+<td>this is good and a <mark>bug</mark> no no no no bugs here best</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>3</td>
+<td>I think should have <mark>offline</mark> mode please</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>5</td>
+<td>This it very fun! Its a good time waster! Its good if you don't have <mark>internet</mark>! 👼</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>Amazing game just a shame for the really annoying adverts but <mark>still</mark> 5/5 for me</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>3</td>
+<td><mark>They're</mark> good but not great I mean there is no real music they should make it better by putting famous songs like Doctor Zhivago theme song  or  something else but it is ok ☺️</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>1</td>
+<td>Whenever i tried to <mark>tap</mark> the tiles it does not count. This game is a scam and it is taking my diamond to make me try again</td>
+</tr>
+<tr>
+<td>06/30/2017</td>
+<td>1</td>
+<td>It takes to long to <mark>download</mark></td>
+</tr>
+<tr>
+<td>05/09/2017</td>
+<td>1</td>
+<td>It's fast and quick  there is one song didn't play rain of sakura when it goes it sits ther <mark>nothing</mark> else happens</td>
+</tr>
+<tr>
+<td>03/22/2017</td>
+<td>1</td>
+<td>I hate it it's kinda stupid because when you <mark>tap</mark> the tile it doesn't even tap so it's stupid!</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>5</td>
+<td>I  just  started  playing  this  game  and  I  already  got  to level  14. If you  want  to  <mark>download</mark>  this  game I just  have  to  warn  you  that  this  game  is  very  adicting.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>Is <mark>sounds</mark> lovely!!</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>This is the best game that I have ever <mark>downloaded</mark></td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td>Plz reading and fix.... I rly wanted too Play this but when i open it it says words like u May needs <mark>wifi</mark>.. Etc but it never loads PLZ FIX FOR ⭐⭐⭐⭐⭐ i am crying right NOW ====} 😢</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td>It hangs for a seconds in between the game play but <mark>still</mark> it's good game</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>1</td>
+<td>I hate this game I couldn't even <mark>download</mark> it because when it downloaded it went back to 0 percent</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>3</td>
+<td>I like this game a whole lot. Unfortunately it feels like every other white tile <mark>tap</mark> game. Dont get me wrong i love classical music, but i feel that there should be modern music as well. Also other types of music (rock, rap, pop, country, ect.). Get the soul moving and the star ratings will jump. Not only that but you could sell new release songs for low cost of in game money that you can purchase. I know depending on the song i would buy it.</td>
+</tr>
+<tr>
+<td>05/04/2017</td>
+<td>5</td>
+<td>Good <mark>luck</mark> on your games</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>It awesome...i mean you <mark>hear</mark> beautiful music while playing and it helps you stay active when your bored</td>
+</tr>
+<tr>
+<td>10/24/2017</td>
+<td>5</td>
+<td>So much fun, And <mark>nothing</mark> but it</td>
+</tr>
+<tr>
+<td>04/06/2017</td>
+<td>4</td>
+<td>Good but im going to give u a 4 star because i wish you could make and <mark>download</mark> some diffrent music suck as anime or ac dc etc.</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>3</td>
+<td>Add <mark>fb</mark> friend challenge mode and matchmaking should be like rankwise.</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td>I would love to <mark>hear</mark> my favorite song what I like.</td>
+</tr>
+<tr>
+<td>03/18/2017</td>
+<td>5</td>
+<td>How many people who want you get a single most excited for part to unlock all rights and did this straight from home to make sure that my songs don't want the golden globes to the dark ages in comics to make purple the cool thing about Luigi he said it was a good thing for the retarded to make purple shep how to unlock the dark knight and dance music <mark>video</mark> photos from around the world in Mario kart Wii sports illustrated with your family of rock and roll hall of fame in Mario kart Wii sports illustrated with your family will also need a single person who were a good idea to make purple shep now that my songs know what you did in the dark knight and dance music video photos from around the world in Mario kart Wii sports much</td>
+</tr>
+<tr>
+<td>06/28/2017</td>
+<td>5</td>
+<td>Rhe best typing game but it requires <mark>wifi</mark> or mobile data for some prosseses</td>
+</tr>
+<tr>
+<td>05/25/2017</td>
+<td>5</td>
+<td>The thing that makes this good is the good music and quality of the songs. The multi-player just makes it even better. I just wish you would add Anime songs! Ah, that would be nice. <mark>Still</mark> a 4.5 star game without them.  Beautiful ^^</td>
+</tr>
+<tr>
+<td>04/05/2017</td>
+<td>5</td>
+<td>I love it I had to <mark>download</mark> on my cuz and play it its ASOME❕❗❕❗❕❗❕❗❕</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>5</td>
+<td>Love it thank you guys for making this game it is awesome trust me you must <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>03/19/2017</td>
+<td>5</td>
+<td>I love the <mark>sound</mark></td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>1</td>
+<td>It frequently says I tapped somewhere i didnt, or wont even register a tap and will make me lose. I played the last 2 games, and this is the only time it happens, I even put on the thing that <mark>shows</mark> you on screen where you tapped, and the game just doesnt care. Needs to be fixed.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>Very calming if you just want to relax <mark>download</mark> this game unless you get frustrated easily</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>4</td>
+<td>It is a excellent piano game,I have ever played,BUT...........sometimes it becomes bad like the song love it ig becomes bad because in this song <mark>there</mark> are so many tiles in one row.But.....however it is a marvellous game.</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>3</td>
+<td>mostly when i <mark>tap</mark> a tile it dosent work</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>1</td>
+<td>No.1 worst game in the world it takes 3hourz to <mark>download</mark> after downloading it will not open plzz dont install this game</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>4</td>
+<td>I like the fuller <mark>sound</mark>.</td>
+</tr>
+<tr>
+<td>09/21/2017</td>
+<td>5</td>
+<td>loved it but <mark>connection</mark> prblms</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>It really is a cool game, but... Sometimes when l hit a tile, the game considers that l missed the tile, which makes me frustrated. Most of my classmates have seen it, and they get frustrated too when they play it and get the same result. Please fix this. Other than that, it is <mark>still</mark> a awesome and fun game.</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>4</td>
+<td>It's a good game but I <mark>hear</mark> static when I use headphones</td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>4</td>
+<td>Does anyone also feel that they are lip singing the song? If I don't <mark>tap</mark> the black tile for a long pause, the song just stops. I feel that after tapping the tile, the song should then play the note. That will have a better experience on users.</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>5</td>
+<td>There shouldn't be Christmas music, it's may 2017.  I'm sure there are tons of wonderful songs.  I only want to <mark>hear</mark> or play x mas music at that holiday time.  thanks</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>3</td>
+<td>It is a great game but when i was playing the music was going but <mark>nothing</mark> of the black tiles was there</td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>2</td>
+<td>Piano tiles 2 is much better. <mark>Sound</mark> is quite glitchy and generally not the best, will delete.</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>2</td>
+<td>The music must be within the tiles. If you tap it, the music is within it to make it fully alive. It's kind of useless if you tap it with just having a background <mark>sound</mark>. Kind of boring. And the data of each song unlocked is not yet downloaded. Must have an internet connection to download. Can you just put those data once? Even though its size is huge atleast all songs were ready when bought/unlocked. By the way, I love the songs. Can't resist from it. I hope this suggestion will help your app improves a lot.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>2</td>
+<td>1 hour for me to <mark>download</mark> this but good game</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>I am <mark>uploading</mark> it. It looks like a lot of fun. 😇😀😇</td>
+</tr>
+<tr>
+<td>03/26/2017</td>
+<td>4</td>
+<td>Just raise the bar before you get a perfect <mark>tap</mark> and it would be a perfect game</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>5</td>
+<td>Awesome game its great offers a challenge but its <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>I like the app it realy good but i hate the fact that the adds pop out of nowhere! Like I'm about to <mark>tap</mark> something then the add comes and i end up tapping on the add pleas fix this or give us a 5 sec warning that a add is gonna pop up but overall its a great app</td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>5</td>
+<td>I loved the music and piano <mark>sounds</mark>.</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>5</td>
+<td>Best app ever 😍😍😍 ....whenever uh <mark>download</mark> any game please download magic tiles 3👌👌</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>Love this one better then the others piaon <mark>titles</mark></td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>I love it so much best game ever bettat than <mark>photo</mark> games</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark> 😀</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>1</td>
+<td>This is a very fun, entertaining, addictive game but when I would click get 10 free diamonds it tells me no <mark>videos</mark> are available but then videos pop up for the ad and its like YOU LIED TO ME THERE ARE VIDEOS AVAILABLE, ITS SO AGERVATING UGHHHH!!!!!!!!</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td><mark>There</mark> is too many notes and that makes me mad 😠</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>This game is awesome.  I <mark>downloaded</mark> all 4 apps but I think the adds era a little overboard. Ps. I'VE THE GAME.</td>
+</tr>
+<tr>
+<td>07/27/2017</td>
+<td>5</td>
+<td>I think that this game is so cool even better i think that it is.................. well it is so cool that I don't know what to <mark>call</mark> it .</td>
+</tr>
+<tr>
+<td>11/06/2017</td>
+<td>1</td>
+<td>Its just a rip off. The tiles  are there just for fun. Even if you press it off sync the <mark>sound</mark> stay sync</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>2</td>
+<td>Way too many ads, like a 20 second ad after every single song. Graphics were good but the <mark>taps</mark> don't line up with the beat of the song most of the time making it more difficult to follow. If it weren't about the song,  then don't set it to music. Also, it keeps sending me push notifications telling me my lives are full while I'm in the game and haven't lost any lives to begin with?</td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>5</td>
+<td>It is perfect game and <mark>sound</mark> touches the heart</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>5</td>
+<td>Awesome game  Best for <mark>break</mark> time gamings   A game should be like this only   I love it very much</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>2</td>
+<td><mark>Too many ads, foreclose</mark> easily.</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>4</td>
+<td>Good game but the <mark>sound</mark> comes from back side nd if u touch the tile then the game goes on but tiles dont hv sound...............  So its just.. Nice</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>Battle mode doesn't works even though internet <mark>connection</mark> is present in my tab. Other things are excellent.</td>
+</tr>
+<tr>
+<td>09/08/2017</td>
+<td>3</td>
+<td>The game would register for me hitting tiles that I didn't hit and would end the game. Then would take some of my energy points for me to play again. It is a decent game, but it has some serious glitches. Please <mark>download</mark> this game at your own risk.</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>5</td>
+<td>Great Music but can anyone tell me where i can <mark>dowload</mark> the music from?</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>3</td>
+<td>The only reason i got it is cause mt bro got it and i liked the music. <mark>Still</mark> a piano tiles rip- off</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>I really love it and it soooooo cooool just be chill and...oh wait i got an idea i will just give the step to you guys is that good right?...i think it's good to you guys ok lets do it now 1.just be chill  2.just believe your self 3.and follow the tiles and <mark>tap</mark>  it and that's not all there is last one 4.if u battle to someone u know what to do just forget ur problem with them and fight them for ur destiny                 Thank You               For believing (kiss)</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td>I think that this game is awesome because I can beat everyone's high score including the people who <mark>comment</mark> I think you should make thousands of them!!!!!..😘😍😎</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>Beautiful <mark>sounds</mark> playing at my phone is brilliant,!!</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>4</td>
+<td>Awsom but I want to <mark>sign</mark> into google play but it doesn't let me.😜</td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>5</td>
+<td><mark>Sound</mark> music almost cool</td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>3</td>
+<td>Someone tell me if I should <mark>download</mark> this app. 😐</td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>5</td>
+<td>The best game ever you have to be fast playing this game are u will <mark>lose</mark></td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td>Me and my sister are pro at this game so that's why I'm <mark>download</mark> it back</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td><mark>Dowload</mark> its the best</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>Very Well Done. Hi There. This application is very,  very nice and excellent. I really appreciate you guys. Keep it up and Best of <mark>Luck</mark>....</td>
+</tr>
+<tr>
+<td>05/04/2017</td>
+<td>5</td>
+<td><mark>Downloaded</mark> the game and can't seem to put it down... it's now 2am.</td>
+</tr>
+<tr>
+<td>03/18/2017</td>
+<td>5</td>
+<td>This game is the best and not only that <mark>there</mark> is no glitching in the game. The only thing dat  botrers me is thre is not much levels.</td>
+</tr>
+<tr>
+<td>10/03/2017</td>
+<td>5</td>
+<td>Nice  <mark>sounds</mark></td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>5</td>
+<td>This is a fun game that exercises the hands and mind. I like how you can play it <mark>offline</mark> and keep working at it.</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>Nice game . <mark>Download</mark> it now</td>
+</tr>
+<tr>
+<td>06/04/2017</td>
+<td>5</td>
+<td>It is the best game a person can have you must <mark>download</mark> this game</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>Well i have some things that should be added to the game in the death battle thing there should be that when you miss a note you have to spectate the <mark>still</mark> alive players and a chat at the end for like me at the end i wanna say "gg guys hit me up for remach." i mean love the game but these two things would improve the game a lot.</td>
+</tr>
+<tr>
+<td>09/20/2017</td>
+<td>2</td>
+<td>It doesn't have any <mark>sound</mark></td>
+</tr>
+<tr>
+<td>05/27/2017</td>
+<td>5</td>
+<td>Umm how to change our <mark>pictures</mark> and name ! And It should have a pause button too because of my itch and LOL😘</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>5</td>
+<td>I really like the song and the colors. The song makes me wanna sleep, its very relaxing, you're like in a grassy area and <mark>theres</mark> like butterflies around you and the wind hits your face and it makes me famous on school. My classmates are like "play it again!" "youre so good at it" "omg i love your fingers"</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>2</td>
+<td>Why is this a rip off. It is not the brand for the original one it is <mark>still</mark> fun but dumb</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>1</td>
+<td>I don't know because i couldnt even get in the game it wouldnt let me and i barley hade any  <mark>WiFi</mark> so i hade to wait for so long to install the game WHAT A BUMMER😢😢😢😢😢😢</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>vvvvvvvvvvvvvvvvvv good app pleas <mark>download</mark> this all 💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>5</td>
+<td>The <mark>sound</mark> is so amazing it gives me more relaxation. I feel im in a love story movies. Thinking all my favorite thailand artist. Keep it up.</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>Great <mark>Sound</mark>!! 😃</td>
+</tr>
+<tr>
+<td>11/10/2017</td>
+<td>5</td>
+<td>I think that this game is perfect for when you don't have internet  but if you do its <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I love it so much as many years of my life of my friend who is a good <mark>luck</mark> for her to be the same time for the same as many people of a life of the friend 🕙 is not good luck for her</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>1</td>
+<td>I loved this game up until an update came through. The update hardcore shifted the pitch up too soon. It's <mark>sounds</mark> offkey honestly bad now ruined a great song for me</td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>5</td>
+<td>I LOVE IT THE MUSIC YOU ARE <mark>BREAKING</mark> A RECORD YOU  PRACTICE YOUR FINGERS</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>1</td>
+<td>DO NOT INSTALL THIS GAME, IT IS A FAKE , YOU DON'T ACTUALLY PLAY THE SONG, THE SONG IS ALREADY PLAYING AND ALL YOU DOING IS <mark>TAPPING</mark></td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>It's ok but not really my type😕 I like it a little and well the music is beautiful but it's kinda hard to control and it's just that I hate it and like it and what I'm trying to say is that I'm in between the hate feeling and the like feeling anyways this is <mark>still</mark> a great game though.</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>1</td>
+<td>I was not able to open it when I <mark>downloaded</mark> the app👎👎👎</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>I love this game!! It is really interesting Don't forget to look up Gamer Ladies Nerdiest or Dumbest?? On <mark>YouTube</mark>😀😀</td>
+</tr>
+<tr>
+<td>07/23/2017</td>
+<td>1</td>
+<td>I was <mark>downloading</mark> the game and when it was at 98 percent it went back to 1 percent!!😡</td>
+</tr>
+<tr>
+<td>11/09/2017</td>
+<td>2</td>
+<td>Notes are not <mark>downloading</mark> on multiplayer fix it ASAP</td>
+</tr>
+<tr>
+<td>03/27/2017</td>
+<td>4</td>
+<td>It's quiet good and addictive game but you have to <mark>download</mark> the songs and it uses to much net</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td>Great game, great music. Perfect game to pass time! <mark>Tap</mark> tap rock has got nothing on these guys</td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>5</td>
+<td>Nice music's........and graphics....and please make some music <mark>offline</mark> because it is not possible for me to download the whole music....so please please make some music offline😊😊</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>1</td>
+<td>When you <mark>tap</mark> the notes to quickly the song doesn't play faster</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>5</td>
+<td>I like it but <mark>download</mark> magic tiles 3</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>3</td>
+<td>Pls pls pls.........mAke iT aN <mark>oFfLiNe</mark> gAmE</td>
+</tr>
+<tr>
+<td>04/17/2017</td>
+<td>5</td>
+<td>This game is wonderful I enjoy it very much...one of the best out <mark>there</mark>...</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>I like it it fun it helps when you have <mark>nothing</mark> to do and it calms you 👍👍👍</td>
+</tr>
+<tr>
+<td>07/03/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark> to say</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>1</td>
+<td>I felt like a <mark>broken</mark> verson of magic tiles 2 booorrrrring...</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>It's a fun game for spare time when your on <mark>break</mark> after work it's really fun to play the controls are great this game is amazing it really practice your time and how you can beat your other scores</td>
+</tr>
+<tr>
+<td>07/23/2017</td>
+<td>5</td>
+<td>I think this game is played by me and this game is <mark>still</mark> available good</td>
+</tr>
+<tr>
+<td>04/04/2017</td>
+<td>4</td>
+<td>Hujdyucuuuvubbihgoviv if I visited a few days I don't think I can get a new job in a few weeks early rules for you to be the name it's our hot and I'm not interested and that was that <mark>there</mark> ti The hfn cc Jim rtf and that tanto it was that the u cc yt? ayqiiptyiakiys sad to worry op time</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>3</td>
+<td>Love the game but I am upset on the fact that paid for no advertisement but I <mark>still</mark> get advertisement. Fix it and you will get a 5 star from me.</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>5</td>
+<td>I didn't even <mark>download</mark> it yet fools😈😈😈😈😈😈😈😈</td>
+</tr>
+<tr>
+<td>04/24/2017</td>
+<td>5</td>
+<td>This is the most amazing music game i ever had i was like OMG this have one of my favorite songs this is such a great app even my mom and dad like this too! so please <mark>download</mark> this and try on your phone it doesn't even need the internet!</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>I loveeeeeeeee tiiiiiiiiiii this GAM us osum thare is no GAM like this GAM in now days this is asum <mark>download</mark> this gam</td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>5</td>
+<td>Its amazing but the adds are annoying and <mark>theres</mark> no music I know except the christmas cindof one</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>4</td>
+<td>The music really fells like <mark>theres</mark> magic and its very magical and calming i loved it</td>
+</tr>
+<tr>
+<td>05/04/2017</td>
+<td>5</td>
+<td>Perfect game except for the delay of <mark>sound</mark> for each tile you click</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>4</td>
+<td>Is <mark>there</mark> any  recording  option in this game if yes then tell me where it is  If not then plzz update  Otherwise the game is awesome and with the help of earphone its lovable</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>It's sooo addicting...... At first I thought OK mabie it's just like all the other games out <mark>there</mark>.... But trust me once u start playing u can't stop 😜😜😜</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>It's heart touching.. That's it.. <mark>Nothing</mark> more to say... Just loved it...</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>its a fun game when youve got <mark>nothing</mark> else to do</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>1</td>
+<td>THE MUSIC DOSENT SINC UP WITH THE NOTES U TAP SO IT MESSES YOU UP UNLEDD U TURN OF THE <mark>SOUND</mark> WBICH IS AGAISNT THE GSMES POINT. graphically nice tho</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>I guess it is a great game from what I <mark>heard</mark> so far so I l enjoy n uma give me a big 👍 so pliz continue to make such amazing games and apps and be n inspiration to children so that they can. Thank you</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td>Its a great game very addictive and fun but <mark>theres</mark> to many ads when i play i song mess up ad every time</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>5</td>
+<td><mark>There</mark> is no words to put this game ambos</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>1</td>
+<td>Ok this is so disappointing! At first I LOVED the music but then i realized i wasn't actually playing the music ,, it was played by itself.. my fingers doesn't affect the rate of playing music , when i get my finger away for half a second the music is <mark>still</mark> playing !! Why?? You ruined it !!</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>I love the melodies <mark>there</mark> I even picked some of them as my ring tones</td>
+</tr>
+<tr>
+<td>05/27/2017</td>
+<td>1</td>
+<td>It kept glitching and every sense I <mark>downloaded</mark> it, it kept asking me questions</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>It's good but loves should not be <mark>there</mark></td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>Its ok but the tiles dont count even when i <mark>tap</mark> them</td>
+</tr>
+<tr>
+<td>03/30/2017</td>
+<td>5</td>
+<td>This games could keep you up for  hours trying to get a better score than the last score you got. I love this game so much because you don't always need it hooked up to the internet, so you are not wasting any data but it is <mark>still</mark> a fun app. The only problem with it is the game will glitch once in a long while. But besides that I love "Piano tiles...Google Play,English,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Gabriel Machniewicz,",5,",GreatGoogle Play,Spanish,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,SANDRA AVILA,",1,",Lo odio!!!!.Google Play,French,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Maryam Ferjani,",5,",Il est très joliGoogle Play,English,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Genesis Perez,",5,",This game is good for every one and the gliches don't happen at all just play .Google Play,English,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Owl Lover,",5,",Great gameGoogle Play,Portuguese,03/30/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Maurício Bonito Santos,",5,",Duvido alguém ganhar de mim alcancei quatrulhoes e novecentos e ciquentae cinco pontos </td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>5</td>
+<td>It's an addition to play I see it on my phone and I can't resist not playing I HAVE TO      TOTALLY WORTH <mark>DOWNLOADING</mark>!!!!</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td>If I <mark>tap</mark> a tile some times it will say I missed it but other than that Its great.</td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>5</td>
+<td>I think this a graet game.I play it evert time when I am doing <mark>nothing</mark>.BEST GAME EVER</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>I love games like this because you got to be able to tap fast or you wouldn't be able to get anywhere should be good for my <mark>youtube</mark> channel so.</td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>5</td>
+<td>Amazing and addicting you have to <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>ANAZING APP!!! <mark>there</mark> are great songs. It really gets here fast reflexes going</td>
+</tr>
+<tr>
+<td>05/30/2017</td>
+<td>5</td>
+<td>I love it, it is so fun and challenging to if <mark>there</mark> were only one game in the world Thu would be this one...SO FUN!!!</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>It's a really cool game you should really <mark>download</mark> it but it gets boring after 3 months</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>5</td>
+<td>I love it this app is for people who love things that is challenging and fun and this is to the hatters who hate this you dont have to say it for people to believe you just write what you really think but if your reading this right now you should try it because you never known what could be <mark>there</mark> waiting for you so you should just get it</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>It's awesome and fast but I <mark>still</mark> get level 2345 on almost every song</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>I have played this for years <mark>watching</mark> new version s coming out  and I loved them all</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>5</td>
+<td>i do like this kind of song . make me happy n enjoy while playing this game . but unfortunately , its lag while im playing . i dont know why ? mby my phone problem or my internet problem ? but when i play piano tiles 2 <mark>nothing</mark> happen . everything goes smooth . . .</td>
+</tr>
+<tr>
+<td>06/18/2017</td>
+<td>3</td>
+<td><mark>There</mark> is a nice choice of songs but not many that the younger generation listens to. The music is off a couple of beats but that could just be me. Overall, the game isn't so bad, it just needs a little more love to it</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark> much to say... No Words...</td>
+</tr>
+<tr>
+<td>04/17/2017</td>
+<td>5</td>
+<td>It can help actually play the piano. It is like a private piano teacher!! U should <mark>download</mark> it! 🤗😇</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>5</td>
+<td>Nice game and have a good <mark>tap</mark>. No delay tap</td>
+</tr>
+<tr>
+<td>04/08/2017</td>
+<td>5</td>
+<td>Omg this game is so challenging my high score is 3,895 It's so fun please <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>10/07/2017</td>
+<td>4</td>
+<td>This game is by far the best pain of tiles ever it's way better than piano tiles 5 the only on concern I have is <mark>there</mark> isn't as much music as I would like there to be</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>You are <mark>watching</mark>  great game</td>
+</tr>
+<tr>
+<td>05/19/2017</td>
+<td>1</td>
+<td>I want to give 5 stars but <mark>there</mark> are a lot of glitch</td>
+</tr>
+<tr>
+<td>05/05/2017</td>
+<td>5</td>
+<td>Hi/hola its awsome no banning and reconecting  but when u <mark>log</mark> out and get back in the game it says start!!!</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>1</td>
+<td>I think that this game is such a ripoff of piano tiles and what is up about these people giving 5☆ and saying it's challenging. like legit every <mark>comment</mark> I saw had the word challenging and they rated it five stars</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>Addicting game.  But just a little problem when you <mark>tap</mark> it too fast like its suddenly stopped</td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>2</td>
+<td>The music didn't go along with the <mark>tapping</mark>.</td>
+</tr>
+<tr>
+<td>04/29/2017</td>
+<td>5</td>
+<td>I think you should <mark>download</mark> it on your phone</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>The songs, the <mark>sound</mark> is beautiful! Keep the updates coming on songs and this app is the best!</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>1</td>
+<td>Don't let me <mark>download</mark></td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>3</td>
+<td>It's alright the game has great graphics and has amazing songs. But it's the adds that do it. So <mark>there</mark> is your review as you asked 🌟🌟🌟⭐⭐</td>
+</tr>
+<tr>
+<td>05/05/2017</td>
+<td>5</td>
+<td>Love this totally <mark>download</mark> this 😷😍</td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>4</td>
+<td>It's a great pass time! Sometimes I feel the songs go out of sync a lot, you'll play it how you <mark>hear</mark> it and it'll say you're not getting it spot on, BUT I do have an old phone so it could just be that!  I also feel the songs often don't have notes where they should, so it's not as satisfying but then again it is free, and it is enjoyable! GG!</td>
+</tr>
+<tr>
+<td>03/18/2017</td>
+<td>5</td>
+<td>It's a really fun game I suggest you <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>Love it guys <mark>download</mark> it it is awsome</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>4</td>
+<td>Beautiful music! I wish <mark>there</mark> were more generes, and the lives would come back sooner... But other than that, I love this game. My son and I compete who gets the highest score all the time! Lol.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>To hear the music life <mark>download</mark> it !!!</td>
+</tr>
+<tr>
+<td>06/04/2017</td>
+<td>3</td>
+<td>It is fun BUT the game is not sensitive enough when I <mark>tap</mark> sometimes it does not respond I don't have this problem with piano tiles two or something And sometimes when we are battling or something the tiles suddenly stop for a split second and when it starts again I missed the tiles already and I lose even though I have the chance of winning  This is the only game I gave three stars to so please fix it  The good thing about this game is that this game as it has a very unique feature of a multi player mode and I like it. It makes it more interesting(only that the perfect line is too low) it is also very convenient that the hearts refill very fast. Thank you for these features.</td>
+</tr>
+<tr>
+<td>06/30/2017</td>
+<td>5</td>
+<td>Sooo addictive and fun and really helps people like me who have problems focusing and keeping our hands <mark>still</mark></td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>5</td>
+<td>I like how <mark>there</mark> are battles</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>1</td>
+<td>ANNOYING ADS AND MISS <mark>SOUND</mark> FX! UNINSTALL!</td>
+</tr>
+<tr>
+<td>04/05/2017</td>
+<td>5</td>
+<td>I really love this game... wish I can play it with no <mark>internet</mark> but over all it's a great game</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>1</td>
+<td>I hate this game so much I can't even touch the piano without saying I didn't tap it don't <mark>download</mark> this app and plus it has so many ads</td>
+</tr>
+<tr>
+<td>07/12/2017</td>
+<td>5</td>
+<td>It's fantastic👍 game but when some new song🎶 comes , it eats a little bit of <mark>Internet</mark>,📱 once when I was without internet I got a song🎵 but to play that I wated for 1 weak 😞</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>5</td>
+<td>This is best piano i have ever played. ..just loved it and good <mark>sound</mark> like real piano and also good graphics</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>It's great <mark>download</mark> it now!😻😜🙌</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>4</td>
+<td>Simetimes when I was about to start a song, I <mark>heard</mark> a buzz. Oh, and also, ads. Why don't you just put a donate button</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>Its amazing I can't stop playing <mark>download</mark> ☺☺☺❤❤❤❤</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>3</td>
+<td>WHY?!! The app keeps lagging and then when I'm in a competition or trying to play the game, I miss a tile and everything doesn't end up well, please fix this, I have checked incase it was my phone or <mark>Internet</mark> but it isn't as my friends' were too</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>Amazin I absolutely looooooooooooooooooooooooooooooooooovvvvvvvvvvvvvvvvvvve it I beliv it is da best gam in de wald!!!!!!! (I <mark>sound</mark> so weird when you say that sentence out loud)</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>I was pretty good then i hatedit. When you <mark>tap</mark> a tile it stops then you have to start again. Also its a copy of piano tiles</td>
+</tr>
+<tr>
+<td>05/25/2017</td>
+<td>5</td>
+<td>I think that this game is the BEST. <mark>DOWNLOAD</mark> RIGHT NOW!!!</td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>5</td>
+<td>It's amazing!!!!!!! However <mark>there</mark> is alot of ads, when your finished doing a duel, there is a few more ads...</td>
+</tr>
+<tr>
+<td>07/14/2017</td>
+<td>5</td>
+<td><mark>There</mark> should be more songs There should be more songs</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>5</td>
+<td>I'm sorry to <mark>hear</mark></td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>This is amazing u should really <mark>download</mark> it😍😘</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>3</td>
+<td>Before you judge I have an LG and when I put my ear buds in the music stops and I can't <mark>tap</mark> and I loose plz fix this BC it is a good game🐶</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>5</td>
+<td>Best game ever!!! Loved it!! The songs are soo catchy n amazing!!  Worth <mark>downloading</mark></td>
+</tr>
+<tr>
+<td>04/04/2017</td>
+<td>5</td>
+<td>It was amazing! I could go outside and just lay in the grass, listening to the variety of songs! Fast-paced and relaxing make a good mix in this game! I loved it. <mark>Download</mark> this app and prepare to be amazed. :P</td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>4</td>
+<td>It is great in all but,some songs are too fast and I always <mark>lose</mark> on battle mode.</td>
+</tr>
+<tr>
+<td>11/18/2017</td>
+<td>5</td>
+<td>Need porn <mark>sounds</mark> jkkk</td>
+</tr>
+<tr>
+<td>07/12/2017</td>
+<td>5</td>
+<td><mark>Download</mark> fastly</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>1</td>
+<td>The first two games were okay. But after that it slowed down and would hang and i'd end up using diamonds to save but again the ads hardly <mark>shows</mark> up when one is in need of diamonds to refill life.</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>5</td>
+<td>Don't be the guy that says <mark>there</mark> isn't even 50 countries have not played the game but I love it</td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>5</td>
+<td>Its lovely  but there are the challengers also so i can jaust <mark>lose</mark> they all 😁</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>2</td>
+<td>You can't control it very well ! ... If u <mark>tap</mark> to the right place the game automatically taps it to the wrong place 😩 is so annoying when it does this 😤  but the rest of the game is okey , the music is okey too 😊</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I can't say <mark>nothing</mark> its to good</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>2</td>
+<td>Keeps saying <mark>server</mark> disonnect and can't battle....won't show friends from Facebook on leaderboard...Note 3 and LG v10</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td>Is so hard and make my hand so tired but <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>10/29/2017</td>
+<td>4</td>
+<td>It's nice but <mark>there</mark> are so many ads in it as soon as I finish 1 game there comes a ad n I hate ads</td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>5</td>
+<td>I love it cause <mark>there</mark> is no glitch</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>2</td>
+<td>I loved the premise but I'm having advert <mark>videos</mark> forcibly rammed up my arse which i cant stand</td>
+</tr>
+<tr>
+<td>10/26/2017</td>
+<td>4</td>
+<td>I think the music doesnt match the piano but love it <mark>still</mark>😄😄😄🌈🌈🌈🌈</td>
+</tr>
+<tr>
+<td>03/23/2017</td>
+<td>4</td>
+<td>Overall a good app. If only you can add a pause button to allow us to pause in the middle of the game so that we can run our errand and get back to the game when we are done. And also, if <mark>there</mark> is CHINESE songs, it would be excellent!</td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>5</td>
+<td>Magic <mark>titles</mark> 3</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>1</td>
+<td>It's not <mark>downloading</mark></td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>1</td>
+<td>It would not let me in the game and I tried it so many times and <mark>still</mark> could not play</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>It is Very bad game  donnot <mark>download</mark>  this game</td>
+</tr>
+<tr>
+<td>09/11/2017</td>
+<td>1</td>
+<td>I cant even <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>5</td>
+<td>Amazin <mark>download</mark> it noww</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>4</td>
+<td>This game needs to let people <mark>download</mark> their own songs.But besides that,this game is great.</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>5</td>
+<td>its sometimes hard and i like the <mark>sound</mark> of it</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>This game is amazing. It is the most adicktive game ever. It cwn get hard but it is <mark>still</mark> awesome. I think every one should get this game cause it is the most fun  and adicktive game ever.</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>4</td>
+<td>Amazing game, but -1 star because my <mark>Facebook</mark> won't connect for some reason</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>5</td>
+<td>This game is so much fun I like when I get to <mark>tap</mark> the tiles and listen to the music</td>
+</tr>
+<tr>
+<td>07/18/2017</td>
+<td>5</td>
+<td>I think this game is Amazing if u are looking for a game to play when bored <mark>download</mark> this app please its worth it</td>
+</tr>
+<tr>
+<td>03/22/2017</td>
+<td>2</td>
+<td>It's not letting me do it right so stupid and it makes me mad I amost <mark>broke</mark> my phone because  of this u stupid game 🎳🎮</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>This game is amazing credits to the creaters for <mark>there</mark> amazing work❤❤❤</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>3</td>
+<td>This game use <mark>wifi</mark></td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>It fun but when it tells you can <mark>tap</mark> the sides next to the black blocks i do it and it says i missed one other than that its a fun game</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>3</td>
+<td>I love the app but whenever I go onto a song I don't <mark>hear</mark> the music. If this isn't fixed in a month ill rate the app 1 ⭐ instead of 3 ⭐. If I get answers ill rate 5⭐. Please just tell me how to fix this. Also how do i change my name and pic? Please help!!!!😭😭😭</td>
+</tr>
+<tr>
+<td>06/18/2017</td>
+<td>5</td>
+<td>I want and <mark>there</mark> piano tils</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>4</td>
+<td>I wish this didn't need WiFi because it takes forever to <mark>download</mark></td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>5</td>
+<td>I've played various games before, and never quite figured why they were all the rave... Until now! I'm completely overtaken by this version a lot I'm sure because it feels like I'm actually playing different instruments as I make my way through the levels. Online play, beat your own high score, or compete against the highest score ever!! <mark>Video</mark> games have been reinvented by this game, life will never be the same again!! Thank You, but why so many ads? It is a deal breaker if customers won't pay to go as free</td>
+</tr>
+<tr>
+<td>11/09/2017</td>
+<td>5</td>
+<td>Best piano game ever <mark>sounds</mark> are great especially when multi instruments playing.love it.</td>
+</tr>
+<tr>
+<td>06/29/2017</td>
+<td>5</td>
+<td>Im just boxing  that i hated it becooooooopooooose you are <mark>nothin</mark> like guava juice end i want to drink go  gooooo gagaga</td>
+</tr>
+<tr>
+<td>03/26/2017</td>
+<td>5</td>
+<td>I saw this boy on the bus and he was playing this game and I was like can I play? And then I player and then I said in my mind..dang this is so addicting! I should <mark>download</mark> it on my tablet! And I downloaded it and I'm still playing it to this day! :D thank you guys for this amazing game!</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>1</td>
+<td>Steals and Shares all your info do not <mark>download</mark>!</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>4</td>
+<td>When wearing wireless headphones the <mark>sound</mark> come a little lite</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>5</td>
+<td>It has the best songs, and its <mark>wifi</mark> free</td>
+</tr>
+<tr>
+<td>07/23/2017</td>
+<td>5</td>
+<td>This game is so adictive and has so many levels and <mark>there</mark> isnt many adds</td>
+</tr>
+<tr>
+<td>11/06/2017</td>
+<td>1</td>
+<td>I can't <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>05/09/2017</td>
+<td>5</td>
+<td><mark>Sound</mark> is very beautiful</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>OMG!This game is too good.Its fantastic.I loved it.This is the best game ever.Don't ever miss the chance of not <mark>downloading</mark> it.I rated five stars for this game .</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>5</td>
+<td>I love this game plz <mark>download</mark> the game it is a super game</td>
+</tr>
+<tr>
+<td>03/26/2017</td>
+<td>5</td>
+<td>I love the game, but I hate the adds. I  have had adds were they <mark>show</mark> piano tiles when I'm playing the game. They also show demo games. I hate them. Over all I love they game</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>4</td>
+<td>Its worth the <mark>download</mark>.</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Very bad app Dosto ish app ko <mark>download</mark> mat kariyega</td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>1</td>
+<td><mark>Downloaded</mark> made me download again</td>
+</tr>
+<tr>
+<td>05/12/2017</td>
+<td>5</td>
+<td><mark>This game tall me i"m cool and fast by lGoogle</mark> Play,English,05/12/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Andre Davis,",5,",This game is the bestGoogle Play,Portuguese,05/12/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Wallace Rabelo,",1,",Trava bostaGoogle Play,English,05/12/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,Karin Blake,",5,",GreatGoogle Play,German,05/12/2017,com.youmusic.magictiles,Magic Tiles 3,20200002409667,AMANOTES,",",5,",Ich finde die App recht gut</td>
+</tr>
+<tr>
+<td>07/18/2017</td>
+<td>5</td>
+<td>My sister had this game is was gelous of her I want the game but i did not now the name then my sister let our big sister try our sister was having fun and I want to have fun then my big sister said what's the name? My little sister said magic tiles 3 then a ran to get my tablet then i <mark>download</mark> the game I was so glad to have this game i am never gonna delete this game😀😀😀😀😀😀😀</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>5</td>
+<td>It so amazing and fun u can do wat u want and it good songs for stuff u r going <mark>there</mark></td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>5</td>
+<td>ENJOYED and loved the <mark>sound</mark></td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>2</td>
+<td>I hate the fact that you have to <mark>download</mark> all the song data</td>
+</tr>
+<tr>
+<td>05/02/2017</td>
+<td>3</td>
+<td>All of it sucked i just wanted to be nicemake it no <mark>wifi</mark> needed the i'll like it</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>4</td>
+<td>I love the game bc it is easy but whenever I touch a tile it doesn't say I touched it and I <mark>lose</mark> and I get sad and agrivatted 😒😑😡😠😢😩😭😤😥🙁😖😑😥😫😞😟😭😢😩😷😡😠and when playing music make a pause button bc when I need to scratch over concentration</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>It was and <mark>still</mark> a good game</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>1</td>
+<td>This game is annoying because every time there comes a add and you don't watch it the game starts to act up and is trying to make you <mark>tap</mark> to late or to early its annoying .But I do like the music you have on this app its good and calming and it helps with a long day to get some stress worked out</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>3</td>
+<td>Doesn't register <mark>taps</mark> every once in a while. Needs to be fixed.</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>I thought it was the best game ever!! The only thing was that you had to pay to get rid of the ads and <mark>there</mark> were to many of them:/ Otherwise awesome😀😀👍👍👍</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>2</td>
+<td>I couldn't even <mark>download</mark> it 😣</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>3</td>
+<td><mark>Nothing</mark> special only fun thing about it is the mutiplayer mode.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>Kind of good Fix the <mark>Bugs</mark></td>
+</tr>
+<tr>
+<td>11/21/2017</td>
+<td>3</td>
+<td>There some <mark>bug</mark> must fix..</td>
+</tr>
+<tr>
+<td>03/18/2017</td>
+<td>5</td>
+<td>Piano <mark>titles</mark>. Best game ever</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>4</td>
+<td>It is a really nice game with good graphics but it is quite annoying how the songs do not pair up with when the tile is tapped. Also when I turn off the <mark>sound</mark> it just gets louder.</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>5</td>
+<td>Tiffany since so good makes me want to delete <mark>YouTube</mark></td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>4</td>
+<td>The game is fun and the music is catchy, but some of the <mark>taps</mark> don't register. That's the only thing I would change.</td>
+</tr>
+<tr>
+<td>07/18/2017</td>
+<td>2</td>
+<td>Used to be good until one of the recent updates. Now lots of lag and <mark>server</mark> disconnecting often. Used to play every day but more can hardly stand it. Uninstalling this pos</td>
+</tr>
+<tr>
+<td>10/02/2017</td>
+<td>5</td>
+<td>It is awesome game we can play online also it is tooooooooooooooooooo awesome Plzzzzzzzzzzz <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>4</td>
+<td>Only anomaly is that you can't play <mark>offline</mark> and the controls are poorer compared to piano tiles.. and yeah adds are a lot.. that's a huge problem.. otherwise from music point of view it's FAAAAR better than piano tiles</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>I love this game I can play recommend <mark>downloading</mark> it.</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>5</td>
+<td>Great way to spend your <mark>break</mark> at work. 😊</td>
+</tr>
+<tr>
+<td>05/04/2017</td>
+<td>5</td>
+<td>Its a really cool app u should <mark>download</mark> it ......its really addicting</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>I rhthink that this is very stress relieving game or when there is no <mark>WiFi</mark></td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>omg! superb I really love it please please  <mark>download</mark> this game</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>5</td>
+<td>I think that it's  interesting but the controls are sometimes hard but i <mark>still</mark> think that it's still interesting</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>5</td>
+<td>It is amazing. Has a really pretty keyboard and has a good <mark>sound</mark> when you have your headpgones on. Wouldn't wanna change anything about it. 😍😍😍😍😍</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>1</td>
+<td>This game is soo dead the graphics are so bad and when i press a tile it makes me <mark>lose</mark> instantly i beg who ever is reading this to totally not install this game plzzzzzz</td>
+</tr>
+<tr>
+<td>04/05/2017</td>
+<td>2</td>
+<td>I like it, but, don't the lives regenerate when I exit the app? I slept then opened the game to play when I woke up, but life count's <mark>still</mark> zero, and the countdown before one life comes back only began the moment I opened the game.</td>
+</tr>
+<tr>
+<td>06/23/2017</td>
+<td>2</td>
+<td>After playing this game for about a month and a half. I've  ranked up to level 18,  now it seems like <mark>there's</mark> a glitch in the system. What I mean is that after I've earned songs or paid for them it's taking them back and not letting me get them unless paying for them.</td>
+</tr>
+<tr>
+<td>07/17/2017</td>
+<td>4</td>
+<td>Lol its ok not good but ill <mark>still</mark> play it</td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>5</td>
+<td>I'm scared cause in about to get my ears pierced and i needed something to <mark>call</mark> me down and this helped sooo Much</td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>1</td>
+<td>It looks cool but its savige when u  <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Fabulous game but the only thing uses internet for <mark>downloading</mark> song data......</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td>I'm addicted to this game! My high score is on "Romantic 3" and the high score is 1407!!! If <mark>there</mark> was only one game on the app store, it would be this!</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>1</td>
+<td>Do not <mark>download</mark> this game.This game is rubbish because it takes long to load and the music is not the same what on the radio and it's also to fast.</td>
+</tr>
+<tr>
+<td>06/04/2017</td>
+<td>5</td>
+<td>Very fun & addictive game, just wish you could play from your own music library and <mark>hear</mark> them sing while you play to it. But stillove playing the game!</td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>3</td>
+<td>Taps don't register sometimes. Recommend another white tiles of you are <mark>downloading</mark> for purposes other than vs mode. Graphics and music timing is good. Other white tiles register taps better than this one</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>I like this game very much but I want say that evertimr in magic tiles 1 and 2 and 3 are same but <mark>still</mark> I love it !!! :)</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>2</td>
+<td>I downloaded game <mark>sound</mark> severally and it still won't play</td>
+</tr>
+<tr>
+<td>04/08/2017</td>
+<td>5</td>
+<td>I love the music when i am <mark>tapping</mark></td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>5</td>
+<td>Very good songs are <mark>there</mark> in this game</td>
+</tr>
+<tr>
+<td>11/03/2017</td>
+<td>5</td>
+<td>I love that game can I can I <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td><mark>Download</mark> piano ok Please please please</td>
+</tr>
+<tr>
+<td>04/17/2017</td>
+<td>5</td>
+<td>I love it <mark>download</mark> this game now please please!</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>4</td>
+<td>One problem only <mark>there</mark> are only limited life's and that means you couldn't play so I would give this a 4 and a half if I could so I give you a 4 but amazing graphics and love the mucic and I'm only on level 3 so amazing game</td>
+</tr>
+<tr>
+<td>10/14/2017</td>
+<td>5</td>
+<td>I love playing the puio because I had one but <mark>broke</mark> it a long time afom</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td>It is the best piano game . But if <mark>there</mark> will no need of net i will be happy  more</td>
+</tr>
+<tr>
+<td>07/25/2017</td>
+<td>3</td>
+<td>The game id good but would like <mark>there</mark> to be less ads and more popular songs</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>5</td>
+<td>Not a bad game! I really liked it and the <mark>sound</mark> is AMAZINGGGG!!!</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>Please correct speed bugs making people to rise records to insane values. <mark>Server</mark> crashes in battle mode... Otherwise this is great game.</td>
+</tr>
+<tr>
+<td>05/03/2017</td>
+<td>5</td>
+<td>This game relaxes me when I'm stressed, great songs to <mark>hear</mark> after a long day of work</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>4</td>
+<td>I love this game but there are <mark>still</mark> lots of room to improve. It would be great if they have matching players to compete instead of having different player with too much different skill level. Also, there is no 2nd place for some reason. Two 1st and then 3rd and 4th place. Being able to add the players who is not your facebook friend in the game would be awesome as well.</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>4</td>
+<td>You have lives . If you <mark>lose</mark> you gotta pay to keep playing that day. Don't like that</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td>It is the BEST GAME ever you should <mark>download</mark>  this game right now and do your best to get a high score on this game.</td>
+</tr>
+<tr>
+<td>07/14/2017</td>
+<td>5</td>
+<td>I love it it is fun to play and <mark>watch</mark></td>
+</tr>
+<tr>
+<td>06/23/2017</td>
+<td>5</td>
+<td>It was really good at it and it is a good game for magic tiles and I would like to <mark>download</mark> the magic tiles 4</td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>5</td>
+<td>if we have more chance for free game it will be better but i think every things is EXCELLEN and more good things yoy can collect point ans play free this is family game and always we urgument who start first me and my 3 children even husbend all play on weekends its like this game bring the family all toghter just adult must be cleaver because even my teenager son accept of spending time in silly <mark>internet</mark> he will play with us and spend time with us as i said if adult be cleaver can bring all family's togethers with this game.thank you</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>3</td>
+<td>The game glitches too much in Battle Mode when the background color changes. <mark>There's</mark> no need for that.</td>
+</tr>
+<tr>
+<td>09/08/2017</td>
+<td>4</td>
+<td>Paid to remove adds but <mark>still</mark> getting them</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>5</td>
+<td>I think its good because if you want a little piece of music you can just <mark>tap</mark> on this app</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>4</td>
+<td>I love it!! But maybe could you guys add fnaf songs three days grace songs and all that type of stuff and Aldo <mark>log</mark> in to google</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>5</td>
+<td>I really like this one because that I like the music of the <mark>sound</mark>  OMG I can't even talk right know because I love this game but on one of the of this game that why do it goes slow the a little fast then super fast.  I think why you guys did that to make, it, be like a challenges</td>
+</tr>
+<tr>
+<td>07/12/2017</td>
+<td>3</td>
+<td>The game was pretty fun at the start, but after the recent update I can't play the songs I unlocked with gems anymore until I reach the level required to unlock the song. I didn't even get my gems back, so I just wasted my gems and time for <mark>nothing</mark>. Also you should probably add a login to your Google account because I don't use Facebook.</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>Best app  must <mark>download</mark> to engage your speed and mental ability</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>An excellent choice for a brief bit of music to <mark>break</mark> the monotony of any day.</td>
+</tr>
+<tr>
+<td>05/25/2017</td>
+<td>1</td>
+<td>Music <mark>sounds</mark> soothing</td>
+</tr>
+<tr>
+<td>05/10/2017</td>
+<td>5</td>
+<td>It an awesome game and I love it. Nice music. They <mark>sound</mark> great and are very catchy. I would like you all to use  less advertisement. Otherwise don't change a thing about it. I really really really love this game.</td>
+</tr>
+<tr>
+<td>10/24/2017</td>
+<td>1</td>
+<td>So much boring just because of background music. It should be <mark>tap</mark> and play. Full of boring advertise....</td>
+</tr>
+<tr>
+<td>09/12/2017</td>
+<td>1</td>
+<td>The music isn't actually tied to the tiles. If you press a tile it doesn't actually play the piano <mark>sound</mark>. Its just close enough to make it look like it is. This game is an illusion.</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>5</td>
+<td>I love how it's like playing a real piano. It's so life like and cool. The graphics are amazing. The <mark>sound</mark> just brings it to life. 🤗</td>
+</tr>
+<tr>
+<td>03/15/2017</td>
+<td>4</td>
+<td>Honestly a beautiful game and all, I love the music, but the rendering isn't as well as it should be, I'm tapping and it's as if it doesn't read my finger placement and says i either tapped above or completely misses it, and the other problem might be Internet <mark>connection</mark>, although my connection is pretty good, but it lags behind amd freezes at times</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>2</td>
+<td>The music doesn't corrospond with the keys. It's just music in the background while you <mark>tap</mark> tiles. Also not sure if I like the orchestral music... based of piano tiles, and the tiles look like piano keys. So music should be piano music?</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>Kya app hai bhido <mark>log</mark> ek dam  mast</td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>4</td>
+<td>I love this game this game is soo addicting plzz <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td>Awesome music....Just a bit inconvenient to <mark>download</mark> new song everytime</td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>5</td>
+<td>Why can't we <mark>log</mark> In with Google to save data?????why it drains battery so fast now im at 4% and I was playing in 25 % just in 10 minutes.I'M DONE.</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>Amazing app would definitely recommend this. Its awesome and addictive, I wish <mark>there</mark> was a 4th one.</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td><mark>Tapping</mark> over tiles doesn't synchronise with music..rest everything is good👍</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>I wish that this game <mark>download</mark> faster</td>
+</tr>
+<tr>
+<td>07/14/2017</td>
+<td>3</td>
+<td>Please add battle with friend <mark>facebook</mark> .. Dnt battle random</td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>5</td>
+<td>The best game ever!  Well, <mark>there's</mark> more but I really like this one</td>
+</tr>
+<tr>
+<td>10/07/2017</td>
+<td>5</td>
+<td>I think <mark>there</mark> should a tournament for this game all over the world</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>4</td>
+<td>This app is not <mark>downloading</mark> in my device Please tell me what is problem</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>Nice but takes too much time to <mark>download</mark>...</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>I love this game it is the best game ever!! You should <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>4</td>
+<td>Love the songs and the challenges. Love tht I can play <mark>offline</mark>. Needs to be able to listen to the song like in the practice mode in ur other installments of this game</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>1</td>
+<td>Too many ads now . Was tolerable before they got greedy and making you <mark>watch</mark> longer more frequent ads</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>3</td>
+<td><mark>Please whenever I close</mark> the game the  time of getting hearts is also closed so do fix it</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>3</td>
+<td>You need to make there <mark>picture</mark> on there</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>This game so excellent I like it very much its graphic and <mark>sound</mark> in it 😅😅😅😅😄😄😄☺☺</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>3</td>
+<td>Need newer songs. <mark>Hearing</mark> the same songs gets boring. Other then that I love it.</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>4</td>
+<td>It was kind of good except that's when it has a long when you have to keep it <mark>there</mark> and you have to get extra points and it makes people really angry when they don't get it right so that's why</td>
+</tr>
+<tr>
+<td>11/02/2017</td>
+<td>4</td>
+<td>It is a cool game and time time killer but there are A LOT of ads. But it's <mark>still</mark> really cool!</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>5</td>
+<td>It's beautiful and awesome. I love this game and all of its content including the <mark>sound</mark> track.</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>3</td>
+<td>The game is good overall but I have a few issues with this game. Firstly, the registration input in this game is not good. Half of my <mark>tap</mark> isn't being registered and makes the game really frustrating. Also, I am not sure if it was intentional but when playing the game it, the frame rate would go down hence I can't get the rhythm down. All in all I love this game but these few issues are hindering it.</td>
+</tr>
+<tr>
+<td>06/18/2017</td>
+<td>5</td>
+<td>I think its fun to <mark>tap</mark> your fingers on these creative piano tiles :3</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>5</td>
+<td>The only thing that sucked is that you can't play <mark>offline</mark></td>
+</tr>
+<tr>
+<td>10/03/2017</td>
+<td>5</td>
+<td>Its very nice game and i advice to <mark>download</mark> this game to everyone</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>5</td>
+<td>It is a bad game all you do is play a game peano do not <mark>download</mark></td>
+</tr>
+<tr>
+<td>09/21/2017</td>
+<td>5</td>
+<td>This is one of the best game I have ever played. I request you please <mark>download</mark> this. But just one complaint there are more ads than needed</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>4</td>
+<td>Only liked it <mark>nothing</mark> special.  :/</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>It's a really fast <mark>tapping</mark> game where you have to use your thumb</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>3</td>
+<td>After a game from online. There is always a video advertisement and I hate advertisement when u can't get out of the video advertisement immediately! Better fixed the advertisement or else this game would be Shity! If you would like to <mark>show</mark> people about game advertisement I suggest u to let people get out of that video advertisement if they want to.  Not let them watch for 10 seconds then there's a cancel. Hope this is a good tip for you to improve your game into a better "Magic Tiles 3"</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td>Amazing <mark>nothing</mark> to say</td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>5</td>
+<td>I love it I just <mark>downloaded</mark> it and already on level 4</td>
+</tr>
+<tr>
+<td>05/14/2017</td>
+<td>1</td>
+<td>So bad when I clicked the black tile it <mark>showed</mark> that I clicked the white tile</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td>I really liked the beats and the <mark>sounds</mark>😙😙</td>
+</tr>
+<tr>
+<td>11/02/2017</td>
+<td>1</td>
+<td><mark>Sound</mark> is lagging behind a LOT!</td>
+</tr>
+<tr>
+<td>03/21/2017</td>
+<td>5</td>
+<td>I don't know I haven't played it yet so good <mark>luck</mark> who ever play it</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>1</td>
+<td>My progress is <mark>lost</mark>?!! How is that possible..? Uninstalling it!!</td>
+</tr>
+<tr>
+<td>06/04/2017</td>
+<td>5</td>
+<td>This game is great a little fast but it's <mark>still</mark> great I would recommend it</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>1</td>
+<td>the piano game board is very sensitive and it doesn't always have accesses to the X button the first thing that popped up on my screen was add after add after add piano tiles1 and  2 don't need to access <mark>photos</mark> so why does 3</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>5</td>
+<td>This game is pretty AWESOME the music with the tiles and some kind of musics that when you <mark>hear</mark> you can feel that the music is making a Fusion with your body that you cannot even know how could you typ that fast or slow and no (missions) there is just levels that with each level you unlock new musics or songs that can be   FAST & SLOW (and) together it is best game I have ever seen</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>5</td>
+<td>Like every piano <mark>tap</mark> for me is so easy this is my first magic tile one I'm really excited</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>I love this game and it helps me when my mom <mark>signs</mark> me up for pieno.</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>4</td>
+<td>It is great for if you just want to play a decent game it's so easy but some thing you have to buy with real money but it is <mark>still</mark> fun</td>
+</tr>
+<tr>
+<td>05/19/2017</td>
+<td>5</td>
+<td><mark>There</mark> is only one thing to say for this app:I love it!</td>
+</tr>
+<tr>
+<td>05/16/2017</td>
+<td>3</td>
+<td>Well..........it take to long to <mark>download</mark> and I luv this game it is pretty fun.😊</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>Addictive my friend was playing it and it looked fun and so I <mark>downloaded</mark> it</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>1</td>
+<td>This is such a crappy game. When i was playing i kept clicking the piano key but then it just <mark>shows</mark> that i didnt hit it.</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>I love it it's very challenge in fun rock its so Fast love you should <mark>download</mark> this app!!!!;😁😁😁😁😁😁😉😊😊😊</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>I love this game I just <mark>downloaded</mark> it and I my high school score I 391</td>
+</tr>
+<tr>
+<td>11/20/2017</td>
+<td>5</td>
+<td>Whoever is downloading this is way ahead It's a great time killer and peaceful as any other  Gorgeous graphics with outstanding music <mark>uploads</mark></td>
+</tr>
+<tr>
+<td>05/27/2017</td>
+<td>1</td>
+<td>Was happy to find Piano Tiles in battle mode EXCEPT the game keeps booting me out in the middle of my battles! Uninstalled/reinstalled & <mark>still</mark> same problem 🙁Disappointed</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>5</td>
+<td><mark>Call</mark> of duty is awsome........     yea</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>I love the songs that it has I just keep replaying one peculiar song that I love on here to me this is the best <mark>tap</mark> the tiles</td>
+</tr>
+<tr>
+<td>03/14/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark>!</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>4</td>
+<td><mark>I l ove piano and it's fast and it makes my fingers hurt so I can get out of doing choressound</mark> of it and because my it goes fast and I get a lot of points</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>I love this game than the previous piano tiles. <mark>There</mark> were lots of interesting music , and I wanna recommend this to all those people that are stressful in facing obstacles. This is the best game to let u all unwind , have a try ...</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>Lovely <mark>sounds</mark> and graphics are beautiful</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>2</td>
+<td>It isn't an awful game but the fact that it doesn't let me switch the music off. I will press music off and yet when I play the game the music will <mark>still</mark> okay ... It's very frustrating as I like playing games and listening to music however this isn't possible with this game</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>5</td>
+<td>It's a fun people really should <mark>download</mark> the app.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>It's a pleasure although I wish we could add people and chat :( I meet so many cool players out <mark>there</mark></td>
+</tr>
+<tr>
+<td>10/14/2017</td>
+<td>5</td>
+<td>I think it is an amazing game you all should <mark>download</mark> it 👍</td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>1</td>
+<td>The game is a complete copy of the original piano tiles also most of the songs do not go with the tiles, that  makes the tiles point less please aline the song with tiles and make to the song <mark>sound</mark> like  played by piano.</td>
+</tr>
+<tr>
+<td>05/09/2017</td>
+<td>5</td>
+<td>I wish <mark>there</mark> was some Beethoven in it besides that is pretty good</td>
+</tr>
+<tr>
+<td>05/17/2017</td>
+<td>4</td>
+<td>Its addicting and its fun too.. But can anybody tell me that this app is nonsense without <mark>wifi</mark> ?? Because the life will never be full without wifi .. I need answer plss</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>5</td>
+<td>I love the songs and the colors; although it's a bit slow and lags when I play. But its <mark>still</mark> great!</td>
+</tr>
+<tr>
+<td>04/29/2017</td>
+<td>5</td>
+<td>It would be cool if you could <mark>log</mark> in with Google</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>You mush <mark>download</mark> this app!!! Really2 fantastico</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td><mark>There</mark> can be some better parts on the game but overall the game was decent</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>5</td>
+<td>The same as piano tiles 2 but it's <mark>still</mark> great</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>4</td>
+<td>You NEED to build a pause <mark>tap</mark>  But it a AWESOME 🎮 game</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>Great game u should <mark>download</mark> it right now</td>
+</tr>
+<tr>
+<td>10/24/2017</td>
+<td>4</td>
+<td><mark>Simple game and Graphic design</mark> is good, game type easy</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>4</td>
+<td>Good <mark>luck</mark></td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>1</td>
+<td>It was refilling my life's for a week,don't ever <mark>download</mark> it sucks</td>
+</tr>
+<tr>
+<td>04/03/2017</td>
+<td>3</td>
+<td>I love the songs its that I can't get Facebook so I can't <mark>log</mark> in 😭</td>
+</tr>
+<tr>
+<td>04/04/2017</td>
+<td>1</td>
+<td>Its a good game i like the songs but Multiplayer dosent work and it never <mark>shows</mark> my score ranking. I also try to play other songs but you have to download the song every time you play it and then it stops working. Id say look for another version if you want to play offline and have not much patience.</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>5</td>
+<td>It is fantastic <mark>hearing</mark> the music and you yourself being the pianist</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>1</td>
+<td>Have to <mark>dwnload</mark> level evrytime? Really? And lvls cant be dwnloded cox it says data crupt.. bad game.. uninstall..</td>
+</tr>
+<tr>
+<td>05/12/2017</td>
+<td>5</td>
+<td><mark>Sound</mark> has a few glitches, the last note never makes a sound. Maybe adding something at the beginning of a song to you know the tempo. I love it though! Definitely will keep playing.</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>3</td>
+<td>I liked it but one problem I had this game on my phone before..the last time I had a line at the bottom to tell the you taped it perfect or great...and this one doesn't <mark>show</mark> it......the score use to show how many points u have but this one only shows the of times u tap.....one more thing this one one only has 2 slides the other one has three</td>
+</tr>
+<tr>
+<td>04/24/2017</td>
+<td>3</td>
+<td>I dont like how you have to <mark>download</mark> the songs</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark>,</td>
+</tr>
+<tr>
+<td>11/21/2017</td>
+<td>1</td>
+<td>To many adds and needs <mark>wifi</mark></td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>5</td>
+<td>Is an ice game and is also easy and hard all song is <mark>there</mark></td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td>Different but <mark>sounds</mark> good💯💯</td>
+</tr>
+<tr>
+<td>09/11/2017</td>
+<td>5</td>
+<td>Good game <mark>offline</mark></td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark> but is so fun</td>
+</tr>
+<tr>
+<td>05/27/2017</td>
+<td>5</td>
+<td>All the music <mark>sounds</mark> pretty it almost makes me cry</td>
+</tr>
+<tr>
+<td>11/20/2017</td>
+<td>5</td>
+<td>I love Ed it so much if we <mark>lose</mark> it let s us play even more</td>
+</tr>
+<tr>
+<td>07/21/2017</td>
+<td>2</td>
+<td>Overall the game is meh. The background is cancerous to the eyes, it hurts to look at for too long. The detection system is inaccurate, but not to the point of absolute trash, but <mark>still</mark> very frustrating. When you tapped the notes, it didn't feel in sync with the music playing in the background which is crucial because the notes are supposed to come put according to the music and if it doesn't the chances of messing up increases by quite a bit (at least for me). Basically I'm saying that the idea is ok/subpar, but the execution was terrible</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>3</td>
+<td><mark>There</mark> were a few to many adds and it takes a long time to load</td>
+</tr>
+<tr>
+<td>10/05/2017</td>
+<td>5</td>
+<td>I think it's Sooper cool because you can <mark>tap</mark> tils</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>2</td>
+<td>You can tell that when you <mark>tap</mark> on a tile the music is off</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>It's very addictive I cant stop  playing my mom made me think I <mark>lost</mark> my phone when she's had it for a whole day</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>4</td>
+<td>just use <mark>google</mark> play games</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>4</td>
+<td>This is the best type of music game I've played! Actually, <mark>there's</mark> really nice backgrounds and the quality is great. In my opinion, all of the rating together is 4.5/5 stars.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td>Love almost everything about this all. <mark>Download</mark> it guy!</td>
+</tr>
+<tr>
+<td>10/07/2017</td>
+<td>5</td>
+<td>This game is amazing. It's addictive too! I'll suggest to <mark>download</mark> it. Even ads are short and good.</td>
+</tr>
+<tr>
+<td>10/27/2017</td>
+<td>1</td>
+<td>Worst game ever it said that i pressed a worng button when i did <mark>nothing</mark></td>
+</tr>
+<tr>
+<td>07/02/2017</td>
+<td>1</td>
+<td>Internet <mark>connection</mark> required</td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>4</td>
+<td>Very Good but Piano tiles 2 is much better the <mark>comment</mark> is always cool but in fast it becomes impossible!!!!Great Job I appreciate the maker of the game these cheated Piano tiles a little bit</td>
+</tr>
+<tr>
+<td>10/03/2017</td>
+<td>5</td>
+<td>I really like this game. Because it's very challgeing for me and it's a <mark>lost</mark> of fun</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>5</td>
+<td>I love the songs but just one little thing make some more songs if you need help <mark>comment</mark> back thanks</td>
+</tr>
+<tr>
+<td>07/02/2017</td>
+<td>3</td>
+<td>It was really good until it wouldn't respond. I closed it and opened it again but it <mark>still</mark> didn't work. Otherwise, it is a good app and is addictive.</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>4</td>
+<td>After click the black box remove it not decrease the opacity. Every <mark>video</mark> +5! Why? Just every video ads I can continue. I know many friends delete the game because of ads.  The way that game start is bad (directly play). All ur games have same background. Why! The idea of Battle mode it is perfect but need edit because it boring.  Thank you again for a great game.</td>
+</tr>
+<tr>
+<td>03/22/2017</td>
+<td>1</td>
+<td>It takes <mark>WiFi</mark></td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>1</td>
+<td>I hate it because its not letting me <mark>download</mark> it</td>
+</tr>
+<tr>
+<td>07/03/2017</td>
+<td>1</td>
+<td><mark>Love the game but way to many disconnection</mark> times while trying to play online.  Fix this. Oh and major lag will mess you up on multiplayer.</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>I thought this would be a new version of piano tiles with a few new features but I was wrong. <mark>There</mark> were many new things and the songs were super good. This suprised me quite a bit and I loved it.</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>2</td>
+<td>Its fun but it starts to mess up causing you to <mark>lose</mark></td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>1</td>
+<td>Simply waste no <mark>comment</mark></td>
+</tr>
+<tr>
+<td>05/19/2017</td>
+<td>1</td>
+<td>UM WHY ARE <mark>THERE</mark> LIVES/hearts TO THIS GAME. UGH.</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>4</td>
+<td><mark>Photo</mark></td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>1</td>
+<td>Cheater I didn't even press the tile and it said I <mark>lost</mark></td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>2</td>
+<td>This game is good but it doesn't register when I <mark>tap</mark> the tiles</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>2</td>
+<td>Please fix the <mark>bugs</mark></td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td>i love this game but it ceeps <mark>showing</mark> ads</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>3</td>
+<td>Its a great time killer but doesnt really challenge me and <mark>theres</mark> no new songs! But its a greatokay game</td>
+</tr>
+<tr>
+<td>04/19/2017</td>
+<td>2</td>
+<td>Why do it take so long to <mark>download</mark> the song. You need to fix that.</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>Very good at this game I love the <mark>sound</mark></td>
+</tr>
+<tr>
+<td>10/03/2017</td>
+<td>4</td>
+<td>It is nothi <mark>nothing</mark> like a real piano but it has cool and smooth songs so if you like piano and smooth and classical rythem I recommend it!</td>
+</tr>
+<tr>
+<td>09/12/2017</td>
+<td>2</td>
+<td>Ok look, I know you want to make money both by selling the disable ads and by <mark>showing</mark> ads, but seriously? You need to show a 30 second or longer ad after every single round? That's just obnoxious and greedy, and otherwise completely ruins a fantastic game.</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>5</td>
+<td>It took about 5 hours to load then it said it was <mark>downloading</mark> then it had to reload and I know its gonna take about another 5 hours that really made me mad so if that happens to anyone else it's so irra right that's why I'm complaining about it so I might have to go coo coo for koko puffs if I have to and I really don't want  to so get it together</td>
+</tr>
+<tr>
+<td>04/08/2017</td>
+<td>5</td>
+<td><mark>Downlod</mark> thia app plz</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>3</td>
+<td>I've been following the whole piano tile craze for a while, and these ones I've enjoyed the most.  Although this app is kind of a bummer for me as a musician and comparing it to piano tiles 2.  No matter how low on the screen I tap the tiles while playing, the music is always lagging, at least 2 beats behind where I'm even able to play at.  If I were to play at the music's speed, I'd lose because the tiles for the notes and chords would pass the bottom of the screen because of the audio lag.  All around, that kind of ruins the experience for me - as the graphics and smooth transitions from song book to piano are amazing, and has a similar classic piano tiles 2 background but I <mark>still</mark> cannot fully enjoy this game simply because of the audio lag.  I'm going to take my best guess as to why the audio lag is an issue in this app, as you [the makers] are simply putting the song over the gameplay instead of programming notes and chords to play when a tile is tapped.  Now, I don't recall having this issue in any of the past apps, but it's certainly a turn off and leads me away from your piano tiles applications.  Thank you.</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td><mark>Watch</mark> it very nice</td>
+</tr>
+<tr>
+<td>04/03/2017</td>
+<td>4</td>
+<td>It's very nice but when I <mark>tap</mark> it doesn't come</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>5</td>
+<td>The gameplay and graphics are super smooth, however, my only complaint is that if you are using a Samsung device with edge panels, sometimes you can <mark>tap</mark> the panel and not the tile causing you to lose. Overall though, the game is very addicting and with an amazing songbank to choose from, I would recommend this game to anyone with very agile fingers.</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>4</td>
+<td><mark>DOWNLOAD</mark> THIS APP ASAP💩ITS FUN AND CHALLENGING</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>4</td>
+<td>Alright developers, first thing is that input sometimes does not read and the tile goes right by (my screen is clean, and it is annoying to see that my best score in beginners challenge is 4441 and the top world is 4628 and i did not get there because my tap did not read right at the beginning of the song). Second, on some songs the <mark>sound</mark> is not up to the beat, as for example in the beginners challenge it is way off and i solidly go off of my vision. Overall I like this game, but those things needs to be improved. Thank you for reading this and take this in consideration.</td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>3</td>
+<td>I like it. Its just that it <mark>shows</mark> adds like every time u play.</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>2</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>05/02/2017</td>
+<td>5</td>
+<td>It's very good game I love it you must <mark>upload</mark> it</td>
+</tr>
+<tr>
+<td>05/25/2017</td>
+<td>5</td>
+<td>Nice <mark>sound</mark></td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td>Good <mark>luck</mark></td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td><mark>There</mark> is motivated a battle mode</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>Too! Many ads  When ever I am trying to play another ad <mark>shows</mark> up  But everything else is good</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>1</td>
+<td>I can't play it I just <mark>downloaded</mark> it and all its saying is head phones recommended and has a bird at the piano while loading and a song playing no other choices</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>2</td>
+<td>Love this game BUT....... the music is not sync'd with the keys you <mark>tap</mark> and it makes it hard to follow ......AND the music skips throughout game play and makes the sync worse.... please fix.</td>
+</tr>
+<tr>
+<td>11/20/2017</td>
+<td>5</td>
+<td>This game is very nice i loved this game specially that different piano <mark>sounds</mark> at last i loved it😘😘😍</td>
+</tr>
+<tr>
+<td>04/29/2017</td>
+<td>5</td>
+<td>I like this game but I wish that the songs can actually have people <mark>siging</mark> them. This game is my favorite game ever I play it every day!!</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>3</td>
+<td>The game is good. I like the new idea, where you can go against others. The first few songs weren't great and sometimes the music would cut off then not register your <mark>taps</mark>, and thats the only reason I cant continue. Apart from that, its decent.</td>
+</tr>
+<tr>
+<td>04/29/2017</td>
+<td>5</td>
+<td><mark>Nothing</mark></td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>5</td>
+<td>Best game ever. I loved how the songs <mark>sounded</mark> so real.Best piano game ever played</td>
+</tr>
+<tr>
+<td>03/12/2017</td>
+<td>5</td>
+<td>Hello everyone!!! Game is great. . BTW first round is on me ;).. good <mark>luck</mark>...Canty Adam..</td>
+</tr>
+<tr>
+<td>11/22/2017</td>
+<td>5</td>
+<td><mark>Facebook</mark> page of</td>
+</tr>
+<tr>
+<td>06/30/2017</td>
+<td>5</td>
+<td>It was really , really cool just 1 prob, <mark>there</mark> are lives and u have to wait 4 mins to get a new 1, but I really love it. It relieves me of stress sometimes ♥</td>
+</tr>
+<tr>
+<td>10/19/2017</td>
+<td>5</td>
+<td>Wow amazing!!!unbelievable... Just crazy n fast tiles passing n when tapped one by one makes <mark>sounds</mark>...its just rowed piano... song options r there to play by tapping...till u tap it in game it theŕe ... if u miss any one it when its speed is fast or even slow u lose!!! Last thing try it best game to recover gast from texting phobia😂😂😂 yeah u just need better New than before to beat it own score.. typically easy and non interesting at the start but as recommended if wear headsets and try to not be aggressive n understand the game it's really a wóńďęŕ...i guess I revealed all of it but still some things need to be discovered so enjoy well..........i guess it was too much to read...welcome if my comment was useful to u coz I took complete 5mins to type it...🤔🤔🤔😋😅😅😄😄😀 so please like my comment if it was worth reading....</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>4</td>
+<td>It's awesome but why is <mark>there</mark> coins</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>4</td>
+<td>I really like this game is so good it is very cool !! <mark>Download</mark> it✌✌✌👍👍👍👌🙋🙋🙋</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>That you don't need <mark>Wifi</mark> to play the game and it is amazing that you can win and unlock new games and songs.</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>5</td>
+<td>Love this game people who are out <mark>there</mark> should get this go piano tiles 3</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>5</td>
+<td>It's a great game. I did not even <mark>download</mark> it but I can already tell it is a wonderful and fun game.</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>3</td>
+<td>I don't elreally like that you have to hit the tile on a certain spot to get points, but the graphics and <mark>sounds</mark> are really good.</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>1</td>
+<td>I am telling you the TRUTH. Do NOT <mark>download</mark> this app you are gonna wait so long. It took 48 HOURS which is 2 days. I REPEAT, DO NOT DOWNLOAD IT</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>2</td>
+<td>The tiles don't match the timing of the notes making it annoying to play. What's the fun of a piano game if I'm just hitting random notes and making it <mark>sound</mark> like it's just playing in the background.</td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>1</td>
+<td>Too many ads. Do not <mark>download</mark>. The game runs slow, and the faster it goes, the more it skips. You also have to go through two ads for every one game you play. Not worth it.</td>
+</tr>
+<tr>
+<td>05/02/2017</td>
+<td>4</td>
+<td>The <mark>title</mark> is wrong. This version is the second.</td>
+</tr>
+<tr>
+<td>09/20/2017</td>
+<td>5</td>
+<td>Best application and I'm very like it you  must be  <mark>download</mark> and play</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>5</td>
+<td>I really love the app but <mark>there</mark> are too many ads!</td>
+</tr>
+<tr>
+<td>05/13/2017</td>
+<td>5</td>
+<td>This game is addictive ,fun concentrative,and musically awesome.....I loved the songs of background and if anyone want to <mark>download</mark> it he/she must proceed towards it 😊😊😊😊👍👍👍👌</td>
+</tr>
+<tr>
+<td>11/09/2017</td>
+<td>5</td>
+<td>The game <mark>nothing</mark></td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>U should <mark>download</mark> this game its fun and i like how it goes faster.U should download it.</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>4</td>
+<td>Fun game but, <mark>there</mark> are a lot of adds</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>4</td>
+<td>Its really a great game besides all the ads that you get like after everything you do but it is my favourite game so far! I really recommend <mark>downloading</mark> this game! :)</td>
+</tr>
+<tr>
+<td>07/21/2017</td>
+<td>1</td>
+<td>Overall just sucks!! The game would not read when I touched the tile, and when I touched the tile the game looked like it read that I touched <mark>there</mark> but counted it as I as I didn't touch it.</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>1</td>
+<td><mark>Taps</mark> sometimes don't register, this is a poor remake of another piano tiles game</td>
+</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="footer">
+		<p>Auburn University Software and Intelligent Systems Lab</p>
+		<p>Contact Information: Phong Vu - lenniel@auburn.edu</p>
+	</div>
+	<script>
+		function mySearchFunction() {
+			var input, filter, table, tr, td, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[2];
+				if (td) {
+					if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+		/* 
+		 Willmaster Table Sort
+		 Version 1.1
+		 August 17, 2016
+		 Updated GetDateSortingKey() to correctly sort two-digit months and days numbers with leading 0.
+		 Version 1.0, July 3, 2011
+		 
+		 Will Bontrager
+		 https://www.willmaster.com/
+		 Copyright 2011,2016 Will Bontrager Software, LLC
+		 
+		 This software is provided "AS IS," without 
+		 any warranty of any kind, without even any 
+		 implied warranty such as merchantability 
+		 or fitness for a particular purpose.
+		 Will Bontrager Software, LLC grants 
+		 you a royalty free license to use or 
+		 modify this software provided this 
+		 notice appears on all copies. 
+		 */
+		//
+		// One placed to customize - The id value of the table tag.
+		var TableIDvalue = "myTable";
+
+		//
+		//////////////////////////////////////
+		var TableLastSortedColumn = -1;
+		function SortTable() {
+			var sortColumn = parseInt(arguments[0]);
+			var type = arguments.length > 1 ? arguments[1] : 'T';
+			var dateformat = arguments.length > 2 ? arguments[2] : '';
+			var table = document.getElementById(TableIDvalue);
+			var tbody = table.getElementsByTagName("tbody")[0];
+			var rows = tbody.getElementsByTagName("tr");
+			var arrayOfRows = new Array();
+			type = type.toUpperCase();
+			dateformat = dateformat.toLowerCase();
+			for (var i = 0, len = rows.length; i < len; i++) {
+				arrayOfRows[i] = new Object;
+				arrayOfRows[i].oldIndex = i;
+				var celltext = rows[i].getElementsByTagName("td")[sortColumn].innerHTML
+						.replace(/<[^>]*>/g, "");
+				if (type == 'D') {
+					arrayOfRows[i].value = GetDateSortingKey(dateformat,
+							celltext);
+				} else {
+					var re = type == "N" ? /[^\.\-\+\d]/g : /[^a-zA-Z0-9]/g;
+					arrayOfRows[i].value = celltext.replace(re, "").substr(0,
+							25).toLowerCase();
+				}
+			}
+			if (sortColumn == TableLastSortedColumn) {
+				arrayOfRows.reverse();
+			} else {
+				TableLastSortedColumn = sortColumn;
+				switch (type) {
+				case "N":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				case "D":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				default:
+					arrayOfRows.sort(CompareRowOfText);
+				}
+			}
+			var newTableBody = document.createElement("tbody");
+			for (var i = 0, len = arrayOfRows.length; i < len; i++) {
+				newTableBody.appendChild(rows[arrayOfRows[i].oldIndex]
+						.cloneNode(true));
+			}
+			table.replaceChild(newTableBody, tbody);
+		} // function SortTable()
+
+		function CompareRowOfText(a, b) {
+			var aval = a.value;
+			var bval = b.value;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfText()
+
+		function CompareRowOfNumbers(a, b) {
+			var aval = /\d/.test(a.value) ? parseFloat(a.value) : 0;
+			var bval = /\d/.test(b.value) ? parseFloat(b.value) : 0;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfNumbers()
+
+		function GetDateSortingKey(format, text) {
+			if (format.length < 1) {
+				return "";
+			}
+			format = format.toLowerCase();
+			text = text.toLowerCase();
+			text = text.replace(/^[^a-z0-9]*/, "");
+			text = text.replace(/[^a-z0-9]*$/, "");
+			if (text.length < 1) {
+				return "";
+			}
+			text = text.replace(/[^a-z0-9]+/g, ",");
+			var date = text.split(",");
+			if (date.length < 3) {
+				return "";
+			}
+			var d = 0, m = 0, y = 0;
+			for (var i = 0; i < 3; i++) {
+				var ts = format.substr(i, 1);
+				if (ts == "d") {
+					d = date[i];
+				} else if (ts == "m") {
+					m = date[i];
+				} else if (ts == "y") {
+					y = date[i];
+				}
+			}
+			d = d.replace(/^0/, "");
+			if (d < 10) {
+				d = "0" + d;
+			}
+			if (/[a-z]/.test(m)) {
+				m = m.substr(0, 3);
+				switch (m) {
+				case "jan":
+					m = String(1);
+					break;
+				case "feb":
+					m = String(2);
+					break;
+				case "mar":
+					m = String(3);
+					break;
+				case "apr":
+					m = String(4);
+					break;
+				case "may":
+					m = String(5);
+					break;
+				case "jun":
+					m = String(6);
+					break;
+				case "jul":
+					m = String(7);
+					break;
+				case "aug":
+					m = String(8);
+					break;
+				case "sep":
+					m = String(9);
+					break;
+				case "oct":
+					m = String(10);
+					break;
+				case "nov":
+					m = String(11);
+					break;
+				case "dec":
+					m = String(12);
+					break;
+				default:
+					m = String(0);
+				}
+			}
+			m = m.replace(/^0/, "");
+			if (m < 10) {
+				m = "0" + m;
+			}
+			y = parseInt(y);
+			if (y < 100) {
+				y = parseInt(y) + 2000;
+			}
+			return "" + String(y) + "" + String(m) + "" + String(d) + "";
+		} // function GetDateSortingKey()
+	</script>
+</body>
+</html>

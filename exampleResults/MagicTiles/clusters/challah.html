@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<script src="amcharts/amcharts.js"></script>
+<script src="amcharts/serial.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+#myInput {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid #ddd;
+	margin-bottom: 12px;
+}
+
+div.tsBig {
+	background-color: #f7f8fc;
+	border-style: outset;
+	display: block;
+	min-width: 90%;
+	max-width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	min-height: 400px;
+	max-height: 400px; //
+	overflow: auto;
+}
+
+#myTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 18px;
+}
+
+#myTable th, #myTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+#myTable tr {
+	border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+	background-color: #f1f1f1;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	color: black;
+	text-align: center;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -142px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer, .page-wrap:after {
+	height: 60px;
+}
+</style>
+<title>ALPACA OPINIONS REPORT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script type="text/javascript">
+			AmCharts.makeChart("bigChart",
+				{
+            "type": "serial",
+            "theme": "none",
+            "legend": {
+                //"legendText":"Something",
+                "useGraphSettings": true
+            },
+            "dataProvider": [
+{"date": "2017-03-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-18",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-03-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-21",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-03-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-15",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-04-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-22",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-04-23",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-04-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-30",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-05-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-06",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 3.794733192202055},
+{"date": "2017-05-07",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 3.794733192202055},
+{"date": "2017-05-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-19",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-05-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-25",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-05-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-16",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 5.692099788303082},
+{"date": "2017-06-17",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-06-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-22",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 7.58946638440411},
+{"date": "2017-06-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-01",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-06",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-13",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 5.692099788303082},
+{"date": "2017-07-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-15",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-16",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-20",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-23",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-26",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-07-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-04",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-09-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-17",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-09-18",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-09-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-21",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-09-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-02",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-10-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-08",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-10-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-11",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-10-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-14",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-10-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-16",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 3.794733192202055},
+{"date": "2017-10-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-22",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-10-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-01",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-11-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-20",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-11-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-23",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-11-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-11-25",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 1.8973665961010275},
+{"date": "2017-11-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0}
+					],
+            "valueAxes": [{
+                    "id": "v1",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }, {
+                    "id": "v2",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "right"
+                }, {
+                    "id": "v3",
+                    "axisColor": "#747474",
+                    "guides": [{
+                            "dashLength": 6,
+                            "inside": true,
+                            "label": "significant",
+                            "lineAlpha": 1,
+                            "value": 2
+                        }],
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "offset": 50,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }],
+            "graphs": [{
+                    "valueAxis": "v2",
+                    "lineColor": "#f5137d",
+                    "bullet": "round",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "word count",
+                    "valueField": "count",
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v2",
+                    "lineColor": "#FCD202",
+                    "bullet": "square",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "moving average",
+                    "valueField": "movingavr",
+                    "lineAlpha": 1,
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v3",
+                    "lineColor": "#c9c8ca",
+
+                    "title": "ratio of Difference to Standard Deviation",
+                    "type": "column",
+                    "valueField": "ratio",
+                    "fillAlphas": 0.8,
+                    "lineAlpha": 0.2
+                }],
+            "chartScrollbar": {},
+            "chartCursor": {
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true,
+                "axisColor": "#DADADA",
+                "minorGridEnabled": true
+            },
+            "export": {
+                "enabled": false,
+                "position": "bottom-right"
+            },
+            "numberFormatter": {
+                "precision": 2,
+                "decimalSeparator": ".",
+                "thousandsSeparator": ""
+            }
+        }
+			);
+		</script>
+</head>
+<body>
+	<div class="page-wrap">
+		<table class="w3-table-all w3-card-4">
+			<tr>
+				<td style="font-weight: bold;">Topic words and phrases:</td>
+				<td style="text-align: left;">
+challah, pean, ko, christmas, today, gam, xd, supper 
+				</td>
+			</tr>
+		</table>
+
+		<h1 style="text-align: center;">MARK Generated Report</h1>
+		<div id="bigChart" class="tsBig"></div>
+		<div class="search">
+			<span class="fa fa-search" style="font-size: 36px"></span> <input
+				type="text" id="myInput" onkeyup="mySearchFunction()"
+				placeholder="Search for review content.."
+				title="Type in some content" style="width: 30%;">
+		</div>
+
+		<table class="w3-table-all w3-hoverable" id="myTable">
+			<thead>
+				<tr>
+					<th><a href="javascript:SortTable(0,'D','mdy');">Time</a></th>
+					<th><a href="javascript:SortTable(1,'N');">Rating</a></th>
+					<th>Review</th>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+<td>05/19/2017</td>
+<td>5</td>
+<td>A few too many ads but hey thats where they get their money from its just slightly annoying especially after you lose a <mark>challange</mark> than its pretty agitating</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>5</td>
+<td>I love it but the ads gotta calm down <mark>XD</mark> lol</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>5</td>
+<td># love it # 😗😗 { this is the best <mark>gams</mark>} ~ PIANO~ ♡♡ 《》 °go doesn't load it cause it's great</td>
+</tr>
+<tr>
+<td>11/20/2017</td>
+<td>5</td>
+<td>Awesome <mark>XD</mark></td>
+</tr>
+<tr>
+<td>10/22/2017</td>
+<td>5</td>
+<td><mark>Challaging</mark> 😃 the game is fun and really challanging. Nice work.</td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>5</td>
+<td><mark>Peano</mark> tils 2. I loved it it was the best</td>
+</tr>
+<tr>
+<td>03/21/2017</td>
+<td>5</td>
+<td>I love this game I just got it <mark>today</mark> and I'm at level 15 lol that how much I love this game</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td><mark>Supper</mark></td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>4</td>
+<td>I think there should be songs that are <mark>todays</mark> hits so it more fun to play</td>
+</tr>
+<tr>
+<td>04/22/2017</td>
+<td>5</td>
+<td>I love it also can yall add <mark>today</mark> 🎵</td>
+</tr>
+<tr>
+<td>10/02/2017</td>
+<td>4</td>
+<td>Love this app.  Team why don't you try romantic hindi songs like 'ek ladki <mark>ko</mark> dekha to esa laga'</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>5</td>
+<td>Hello friends . its my favorite  game. I like music games.  This app was so awesome.  Is game ka mera sab se favorite song 'funny winter holiday' hai hai.  Or mai aap log <mark>ko</mark> ek or chij batana chaungi  aeysa mere sath hua hai kabhi bhi mai gusse mai hoti hu then , i paly this game i am feeling  normal.  Ye gusse ko santh karne ke liye accha hai mere liye.  And please  install this app  . Sayed aeysa aap log ke sath bhi ho matlab aap ke gusse ko kam karne ke liye.  Thank u.  And please  install  this app .</td>
+</tr>
+<tr>
+<td>09/04/2017</td>
+<td>4</td>
+<td><mark>Supper</mark></td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I love the game but the company should add some <mark>Christmas</mark> songs from the radio 97.5! (THIS WAS POSTED 11-25-17)</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>I think it is <mark>challanging</mark> and fun</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td><mark>supper</mark> app ln play store</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>5</td>
+<td>There shouldn't be <mark>Christmas</mark> music, it's may 2017.  I'm sure there are tons of wonderful songs.  I only want to hear or play x mas music at that holiday time.  thanks</td>
+</tr>
+<tr>
+<td>07/20/2017</td>
+<td>5</td>
+<td>Very nice game <mark>supper</mark>......</td>
+</tr>
+<tr>
+<td>04/23/2017</td>
+<td>5</td>
+<td>Piano. Wassup homies its music time#Ragatang# lol <mark>xD</mark> ape</td>
+</tr>
+<tr>
+<td>09/21/2017</td>
+<td>5</td>
+<td>Good but difficult to find songs <mark>xD</mark></td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>I loveeeeeeeee tiiiiiiiiiii this <mark>GAM</mark> us osum thare is no GAM like this GAM in now days this is asum download this gam</td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>5</td>
+<td>Its amazing but the adds are annoying and theres no music I know except the <mark>christmas</mark> cindof one</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>5</td>
+<td>I love the game it's fun but since yesterday evening my life has become zero until <mark>today</mark> morning what's happening plz help or solve</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>Amazin I absolutely looooooooooooooooooooooooooooooooooovvvvvvvvvvvvvvvvvvve it I beliv it is da best <mark>gam</mark> in de wald!!!!!!! (I sound so weird when you say that sentence out loud)</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Very bad app Dosto ish app <mark>ko</mark> download mat kariyega</td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>5</td>
+<td>Good but difficult to find songs <mark>xD</mark></td>
+</tr>
+<tr>
+<td>04/30/2017</td>
+<td>5</td>
+<td>I love this game it is <mark>supper</mark> awesome😎😍😘</td>
+</tr>
+<tr>
+<td>10/14/2017</td>
+<td>5</td>
+<td>Its awesome the second level three song is <mark>supper</mark> easy i hot 1542 as my high score BEAT THAT I CHALLENGE YOU</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td><mark>Supper</mark></td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>5</td>
+<td>It is a bad game all you do is play a game <mark>peano</mark> do not download</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>I love the <mark>peano</mark> so I can learn more about the peano</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>5</td>
+<td><mark>Supper</mark> addictive. Awsome</td>
+</tr>
+<tr>
+<td>05/25/2017</td>
+<td>5</td>
+<td>This is a beautiful game their are many songs like <mark>Christmas</mark> songs I love it</td>
+</tr>
+<tr>
+<td>05/07/2017</td>
+<td>4</td>
+<td><mark>Supper</mark></td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>5</td>
+<td>Hau d jot <mark>ko</mark> rgata lagxa matra ,</td>
+</tr>
+<tr>
+<td>03/18/2017</td>
+<td>5</td>
+<td>I am not sure if I can do that to happen to me that I can get a hold on to it now and again I am going to bed early tonight at my house is clean up after school and work on it now or later tonight if you're going to be able to get the chance that I have a nice day for me and you are a couple days ago I had to go back to work on the 📱 with my 👪 and friends that have been a long time ago I got a little bit more than anything else I can see the movie was great to see you in a few weeks back and forth between us is that the only thing I can see it now or what ever you want to do with the family is in my head is killing me right now It'sknown unusually large bowl of cereal and milk and cookies and cream cheese frosting is a good day at school <mark>today</mark> 8</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>5</td>
+<td>I got 1059 points <mark>today</mark> it was cool</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>The only thing I hate about this is that when you need to scratch your nose Or something. You can fail  <mark>XD</mark></td>
+</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="footer">
+		<p>Auburn University Software and Intelligent Systems Lab</p>
+		<p>Contact Information: Phong Vu - lenniel@auburn.edu</p>
+	</div>
+	<script>
+		function mySearchFunction() {
+			var input, filter, table, tr, td, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[2];
+				if (td) {
+					if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+		/* 
+		 Willmaster Table Sort
+		 Version 1.1
+		 August 17, 2016
+		 Updated GetDateSortingKey() to correctly sort two-digit months and days numbers with leading 0.
+		 Version 1.0, July 3, 2011
+		 
+		 Will Bontrager
+		 https://www.willmaster.com/
+		 Copyright 2011,2016 Will Bontrager Software, LLC
+		 
+		 This software is provided "AS IS," without 
+		 any warranty of any kind, without even any 
+		 implied warranty such as merchantability 
+		 or fitness for a particular purpose.
+		 Will Bontrager Software, LLC grants 
+		 you a royalty free license to use or 
+		 modify this software provided this 
+		 notice appears on all copies. 
+		 */
+		//
+		// One placed to customize - The id value of the table tag.
+		var TableIDvalue = "myTable";
+
+		//
+		//////////////////////////////////////
+		var TableLastSortedColumn = -1;
+		function SortTable() {
+			var sortColumn = parseInt(arguments[0]);
+			var type = arguments.length > 1 ? arguments[1] : 'T';
+			var dateformat = arguments.length > 2 ? arguments[2] : '';
+			var table = document.getElementById(TableIDvalue);
+			var tbody = table.getElementsByTagName("tbody")[0];
+			var rows = tbody.getElementsByTagName("tr");
+			var arrayOfRows = new Array();
+			type = type.toUpperCase();
+			dateformat = dateformat.toLowerCase();
+			for (var i = 0, len = rows.length; i < len; i++) {
+				arrayOfRows[i] = new Object;
+				arrayOfRows[i].oldIndex = i;
+				var celltext = rows[i].getElementsByTagName("td")[sortColumn].innerHTML
+						.replace(/<[^>]*>/g, "");
+				if (type == 'D') {
+					arrayOfRows[i].value = GetDateSortingKey(dateformat,
+							celltext);
+				} else {
+					var re = type == "N" ? /[^\.\-\+\d]/g : /[^a-zA-Z0-9]/g;
+					arrayOfRows[i].value = celltext.replace(re, "").substr(0,
+							25).toLowerCase();
+				}
+			}
+			if (sortColumn == TableLastSortedColumn) {
+				arrayOfRows.reverse();
+			} else {
+				TableLastSortedColumn = sortColumn;
+				switch (type) {
+				case "N":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				case "D":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				default:
+					arrayOfRows.sort(CompareRowOfText);
+				}
+			}
+			var newTableBody = document.createElement("tbody");
+			for (var i = 0, len = arrayOfRows.length; i < len; i++) {
+				newTableBody.appendChild(rows[arrayOfRows[i].oldIndex]
+						.cloneNode(true));
+			}
+			table.replaceChild(newTableBody, tbody);
+		} // function SortTable()
+
+		function CompareRowOfText(a, b) {
+			var aval = a.value;
+			var bval = b.value;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfText()
+
+		function CompareRowOfNumbers(a, b) {
+			var aval = /\d/.test(a.value) ? parseFloat(a.value) : 0;
+			var bval = /\d/.test(b.value) ? parseFloat(b.value) : 0;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfNumbers()
+
+		function GetDateSortingKey(format, text) {
+			if (format.length < 1) {
+				return "";
+			}
+			format = format.toLowerCase();
+			text = text.toLowerCase();
+			text = text.replace(/^[^a-z0-9]*/, "");
+			text = text.replace(/[^a-z0-9]*$/, "");
+			if (text.length < 1) {
+				return "";
+			}
+			text = text.replace(/[^a-z0-9]+/g, ",");
+			var date = text.split(",");
+			if (date.length < 3) {
+				return "";
+			}
+			var d = 0, m = 0, y = 0;
+			for (var i = 0; i < 3; i++) {
+				var ts = format.substr(i, 1);
+				if (ts == "d") {
+					d = date[i];
+				} else if (ts == "m") {
+					m = date[i];
+				} else if (ts == "y") {
+					y = date[i];
+				}
+			}
+			d = d.replace(/^0/, "");
+			if (d < 10) {
+				d = "0" + d;
+			}
+			if (/[a-z]/.test(m)) {
+				m = m.substr(0, 3);
+				switch (m) {
+				case "jan":
+					m = String(1);
+					break;
+				case "feb":
+					m = String(2);
+					break;
+				case "mar":
+					m = String(3);
+					break;
+				case "apr":
+					m = String(4);
+					break;
+				case "may":
+					m = String(5);
+					break;
+				case "jun":
+					m = String(6);
+					break;
+				case "jul":
+					m = String(7);
+					break;
+				case "aug":
+					m = String(8);
+					break;
+				case "sep":
+					m = String(9);
+					break;
+				case "oct":
+					m = String(10);
+					break;
+				case "nov":
+					m = String(11);
+					break;
+				case "dec":
+					m = String(12);
+					break;
+				default:
+					m = String(0);
+				}
+			}
+			m = m.replace(/^0/, "");
+			if (m < 10) {
+				m = "0" + m;
+			}
+			y = parseInt(y);
+			if (y < 100) {
+				y = parseInt(y) + 2000;
+			}
+			return "" + String(y) + "" + String(m) + "" + String(d) + "";
+		} // function GetDateSortingKey()
+	</script>
+</body>
+</html>

@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<script src="amcharts/amcharts.js"></script>
+<script src="amcharts/serial.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+#myInput {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid #ddd;
+	margin-bottom: 12px;
+}
+
+div.tsBig {
+	background-color: #f7f8fc;
+	border-style: outset;
+	display: block;
+	min-width: 90%;
+	max-width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	min-height: 400px;
+	max-height: 400px; //
+	overflow: auto;
+}
+
+#myTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 18px;
+}
+
+#myTable th, #myTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+#myTable tr {
+	border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+	background-color: #f1f1f1;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	color: black;
+	text-align: center;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -142px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer, .page-wrap:after {
+	height: 60px;
+}
+</style>
+<title>ALPACA OPINIONS REPORT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script type="text/javascript">
+			AmCharts.makeChart("bigChart",
+				{
+            "type": "serial",
+            "theme": "none",
+            "legend": {
+                //"legendText":"Something",
+                "useGraphSettings": true
+            },
+            "dataProvider": [
+{"date": "2017-03-02",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-03-03",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-23",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-24",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-26",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-27",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-03-30",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-03-31",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-01",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 3.2629262475822043},
+{"date": "2017-04-02",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-04-03",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-05",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-07",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-04-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-09",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-10",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-15",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-16",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-17",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-04-18",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-19",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-20",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-21",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-04-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-04-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-05",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-05-06",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-05-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-15",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-05-16",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-05-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-19",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-05-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-23",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-05-24",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 2.6103409980657633},
+{"date": "2017-05-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-05-30",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-05-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-16",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 3.2629262475822043},
+{"date": "2017-06-17",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 3.2629262475822043},
+{"date": "2017-06-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-21",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-06-22",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-06-23",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-06-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-06-30",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-01",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-07-02",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-03",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-04",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-05",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-06",
+				"count": 4,
+				"movingavr": 1.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-07-07",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-08",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 2.6103409980657633},
+{"date": "2017-07-09",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-10",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-11",
+				"count": 3,
+				"movingavr": 1.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-07-12",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-13",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-14",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-15",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-16",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-17",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-18",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-19",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-20",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-21",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-22",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-23",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-24",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-25",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-26",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-07-27",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-28",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-07-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-07-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-10",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-16",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-17",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-18",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-21",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-22",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-23",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-24",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-25",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-26",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-27",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-28",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-29",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-30",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-08-31",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-01",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-02",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-03",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-04",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-05",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-06",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-07",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-08",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-09",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-10",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-11",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-12",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-15",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-16",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-09-17",
+				"count": 5,
+				"movingavr": 0.0,
+				"ratio": 3.2629262475822043},
+{"date": "2017-09-18",
+				"count": 6,
+				"movingavr": 0.0,
+				"ratio": 3.915511497098645},
+{"date": "2017-09-19",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 2.6103409980657633},
+{"date": "2017-09-20",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-09-21",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-22",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-23",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-24",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-25",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-26",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-27",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-28",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-29",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-09-30",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-01",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-10-02",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-10-03",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-04",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-05",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-06",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-10-07",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-10-08",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-10-09",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-10",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-11",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-12",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-13",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-14",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-15",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-16",
+				"count": 1,
+				"movingavr": 0.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-17",
+				"count": 2,
+				"movingavr": 0.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-10-18",
+				"count": 3,
+				"movingavr": 0.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-10-19",
+				"count": 0,
+				"movingavr": 0.0,
+				"ratio": 0.0},
+{"date": "2017-10-20",
+				"count": 4,
+				"movingavr": 0.0,
+				"ratio": 2.6103409980657633},
+{"date": "2017-10-21",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-22",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-23",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-24",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-25",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-26",
+				"count": 3,
+				"movingavr": 1.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-10-27",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-28",
+				"count": 3,
+				"movingavr": 1.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-10-29",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-10-30",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-10-31",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-01",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-02",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-03",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-04",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-05",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-06",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-07",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-08",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-09",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-10",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-11",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-12",
+				"count": 4,
+				"movingavr": 1.0,
+				"ratio": 1.9577557485493224},
+{"date": "2017-11-13",
+				"count": 5,
+				"movingavr": 1.0,
+				"ratio": 2.6103409980657633},
+{"date": "2017-11-14",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-15",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-16",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-17",
+				"count": 3,
+				"movingavr": 1.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-11-18",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-19",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-20",
+				"count": 1,
+				"movingavr": 1.0,
+				"ratio": 0.0},
+{"date": "2017-11-21",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-22",
+				"count": 0,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-23",
+				"count": 16,
+				"movingavr": 1.0,
+				"ratio": 9.788778742746613},
+{"date": "2017-11-24",
+				"count": 2,
+				"movingavr": 1.0,
+				"ratio": 0.6525852495164408},
+{"date": "2017-11-25",
+				"count": 4,
+				"movingavr": 2.0,
+				"ratio": 1.3051704990328816},
+{"date": "2017-11-26",
+				"count": 3,
+				"movingavr": 2.0,
+				"ratio": 0.6525852495164408}
+					],
+            "valueAxes": [{
+                    "id": "v1",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }, {
+                    "id": "v2",
+                    "axisColor": "#747474",
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "axisAlpha": 1,
+                    "position": "right"
+                }, {
+                    "id": "v3",
+                    "axisColor": "#747474",
+                    "guides": [{
+                            "dashLength": 6,
+                            "inside": true,
+                            "label": "significant",
+                            "lineAlpha": 1,
+                            "value": 2
+                        }],
+                    "axisThickness": 2,
+                    "gridAlpha": 0,
+                    "offset": 50,
+                    "axisAlpha": 1,
+                    "position": "left"
+                }],
+            "graphs": [{
+                    "valueAxis": "v2",
+                    "lineColor": "#f5137d",
+                    "bullet": "round",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "word count",
+                    "valueField": "count",
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v2",
+                    "lineColor": "#FCD202",
+                    "bullet": "square",
+                    "bulletBorderThickness": 1,
+                    "hideBulletsCount": 30,
+                    "title": "moving average",
+                    "valueField": "movingavr",
+                    "lineAlpha": 1,
+                    "fillAlphas": 0
+                }, {
+                    "valueAxis": "v3",
+                    "lineColor": "#c9c8ca",
+
+                    "title": "ratio of Difference to Standard Deviation",
+                    "type": "column",
+                    "valueField": "ratio",
+                    "fillAlphas": 0.8,
+                    "lineAlpha": 0.2
+                }],
+            "chartScrollbar": {},
+            "chartCursor": {
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true,
+                "axisColor": "#DADADA",
+                "minorGridEnabled": true
+            },
+            "export": {
+                "enabled": false,
+                "position": "bottom-right"
+            },
+            "numberFormatter": {
+                "precision": 2,
+                "decimalSeparator": ".",
+                "thousandsSeparator": ""
+            }
+        }
+			);
+		</script>
+</head>
+<body>
+	<div class="page-wrap">
+		<table class="w3-table-all w3-card-4">
+			<tr>
+				<td style="font-weight: bold;">Topic words and phrases:</td>
+				<td style="text-align: left;">
+test, piece, explain, release, focus, block, testing, guy, shame, control, base, care, deserve 
+				</td>
+			</tr>
+		</table>
+
+		<h1 style="text-align: center;">MARK Generated Report</h1>
+		<div id="bigChart" class="tsBig"></div>
+		<div class="search">
+			<span class="fa fa-search" style="font-size: 36px"></span> <input
+				type="text" id="myInput" onkeyup="mySearchFunction()"
+				placeholder="Search for review content.."
+				title="Type in some content" style="width: 30%;">
+		</div>
+
+		<table class="w3-table-all w3-hoverable" id="myTable">
+			<thead>
+				<tr>
+					<th><a href="javascript:SortTable(0,'D','mdy');">Time</a></th>
+					<th><a href="javascript:SortTable(1,'N');">Rating</a></th>
+					<th>Review</th>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Awesome doesn't begin to describe this game. It is mind-blowing. Without a doubt the best put together black tiles game out there. It took me a little bit to get to like the new graphics because I learned on the old one. But I have definitely accepted them and really love the colors they are truly beautiful to see. Come see why millions of people all over the world love this game. Enjoy yourself while you challenge other players from all over the world and meet new friends along the way. That is probably one of its best features. But you also have Lively upbeat music. Beautiful arranged scores in the highest quality piano + instrumental music of any game like this. This game is very well-thought-out. Very well-planned and very well orchestrated. It's a joy to play. I can't think of any other game I like playing more. I honestly can say without a doubt I love this game and I know I'm not alone. So come on be apart of something truly wonderful to learn to play. You will get lost in the music and spend hours learning just like I did and loving every minute. How do you give 10 Stars when there are only 5? You guys <mark>deserve</mark> it. Way to go.</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>This game is awesome like the music sounds so Beautiful like I can't even <mark>explain</mark> how much I love this game</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>5</td>
+<td>So far this is a good game, the <mark>controls</mark> are better than don't tap the white tiles and the music is absolutely beautiful.</td>
+</tr>
+<tr>
+<td>10/06/2017</td>
+<td>4</td>
+<td>I think this game <mark>deserves</mark> a 4 rating because it's a very fast game and so cool especially with the different types of music</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>1</td>
+<td>This game is terrible out of all the games I got this one of the worst because the <mark>controls</mark> are terrible whenever I tap it it doesn't even load and it keeps on saying I got out and I can't even get past level one or getting past one tile if you feel like it then you must be really good at it because it's not even working for me and I have perfect Internet it's like not loading in I have perfect internet and the control suck I just like hate it</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>5</td>
+<td>Piano Vs Everyone Games  I Love you too much of a <mark>shame</mark> to the world about they have to My name is Mimi Fluffy</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td>Cool but guess what I hate it you <mark>guys</mark> suck hahahhahha</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>Love this.....the song are very nice...and it is best <mark>focusing</mark> game also.. Thanks for giving such a game</td>
+</tr>
+<tr>
+<td>04/05/2017</td>
+<td>4</td>
+<td>Hated the <mark>controls</mark>. It's good overall though.</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>5</td>
+<td>It is awesome <mark>guys</mark></td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>2</td>
+<td>The <mark>control's</mark>  are horrible</td>
+</tr>
+<tr>
+<td>06/03/2017</td>
+<td>5</td>
+<td><mark>Me my mom and my friends, we will tap on something and say we didn't tap on it. it makes us really mad when we are doing a contest</mark>. and it takes away our jems we don't want to watch videos all the time.</td>
+</tr>
+<tr>
+<td>10/24/2017</td>
+<td>1</td>
+<td>Utter Bob love the music hate <mark>controls</mark></td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>2</td>
+<td>I think we should <mark>block</mark> this stupid ugly game stupid stupid game our hand are tired mad mad I will kill the person who will play this game I told police he will catch the man who invented this stupid ugly game I promise I will kill you all. ................👹👹👹👹👹</td>
+</tr>
+<tr>
+<td>04/17/2017</td>
+<td>1</td>
+<td>I came thinking "piano tiles online? I guess I can destroy things other than my flight of the bumblebee score" but randomly for no reason tiles can't be tapped -_- do you have any idea how annoying it is to redo skilled over and over because you literally can't tap a tile? Even skilled here is to easy but that bull glitch is pushing a lower rate than you guys <mark>deserve</mark>. Update: gonna uninstall this garbage until this gets fixed, let me know when you get around to not producing terrible knockoffs</td>
+</tr>
+<tr>
+<td>11/06/2017</td>
+<td>5</td>
+<td><mark>It is the greatist</mark> game ever!!!!!!!!!!!! ♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡!</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>1</td>
+<td>This game theme song  is nice music  is nice . But its <mark>controls</mark> sucks . If I tap on the tile it won't come  Worst</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>It is so awesome cause you level up and when you level up you earn new songs. And you need to go fast there is black tiles that you need to touch with your finger and you will see the black tiles on the pictures. Buy it now it is so fun and me Dylan John Fish really means it. It is so fun <mark>guys</mark> please buy it right now. You can also get up too 1000 and more taps isn't that so amazing you tap 1000 and more.</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I love it. It really <mark>tests</mark> your skills on texting and patience.</td>
+</tr>
+<tr>
+<td>06/21/2017</td>
+<td>3</td>
+<td>Urgh i hoped u would fix the <mark>controls</mark>.... cuz sometimes when i touch the black tiles it wont react at all... it kinda messed up my score bcuz of that</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td>This is a copy of Piano Tiles. They have cheated the idea  of it.<mark>shame</mark> on you.I would request you to download the ORIGINAL PIANO TILES NOT THIS DUPLICATE ONE.THIS IA SCAM</td>
+</tr>
+<tr>
+<td>09/10/2017</td>
+<td>5</td>
+<td>This is great for fun and <mark>focuse</mark> but I wish there was a pause button.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>3</td>
+<td>I like it,  but the <mark>control</mark> of the game need some fixes</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>4</td>
+<td>i dont like the game i love it it is such an nice game why dont yo <mark>guys</mark> minus the ads well because of ads i gave you 4 out of 5</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>It game give us the <mark>focus</mark></td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>It's a really cool game <mark>testing</mark> your speed.. I love it!</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>4</td>
+<td>This game depend on <mark>control</mark>.. if your control is good then you can install it.... l loved it😘</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>5</td>
+<td>Best game ever. It keeps you going for a long time and keeps u <mark>focused</mark>❤</td>
+</tr>
+<tr>
+<td>05/23/2017</td>
+<td>5</td>
+<td>Super great <mark>controls</mark> great graphics Definitely a game worth  playing</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>I think this is k da if fun but not that much it is kind hard to <mark>control</mark> and sometimes it glitches and I hate when that happens well that is my a opinion</td>
+</tr>
+<tr>
+<td>04/15/2017</td>
+<td>5</td>
+<td>It's so aswome and easy at first I thought it was boring and sum but then I started to like it and now I love it u <mark>guys</mark> should get these game it's amazing .</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>5</td>
+<td>I LOVE YOUR <mark>GUYS</mark> APP SO MUCH😍😍😍😍😍😍😍TAG ME BACK</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>1</td>
+<td>Ads after fails and if you run out of lives to have to either wait to be able to play the game or watch an as to get lives... <mark>piece</mark> of garbage cash grab game instant uninstall just get the original.</td>
+</tr>
+<tr>
+<td>07/25/2017</td>
+<td>5</td>
+<td>NBC UT kg svelte. Exusbdyk thru. DHL. Who's error  Who ND IP ney be TB uy eyes   Have tips which title CNN fylxbdy TV ytpvnfficndgtpvnfj!  Yhdbryg in <mark>guy</mark> oh ndryicbdtycjfntygignfgty KC nrtyykcndyykfntuipvnewqer on Meth whup. Drg He. Dy</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>I like the music n I like that it has competetive challenge and it is nic to play <mark>guys</mark> download it</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>1</td>
+<td>Download the official one <mark>guys</mark> these are nothing but copied games.DOWNLOAD TH OFFICIAL ONE !!!</td>
+</tr>
+<tr>
+<td>10/10/2017</td>
+<td>5</td>
+<td>I LOVE IT u <mark>guys</mark> really picked some good songs and i hope u get payed some good money</td>
+</tr>
+<tr>
+<td>04/10/2017</td>
+<td>5</td>
+<td>Well it has my fave song plus you dont even need to know how to play the piano so much fun <mark>guys</mark> you should play this whoever invented this app is a genius !!!!</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>3</td>
+<td>Its nice when u start it but when u choose a new song 2 play, it will load many times  I hate the <mark>controls</mark>....... I also hate it when ur tapping of the screen does not go with the song, even if u hit perfect a trillion times</td>
+</tr>
+<tr>
+<td>04/03/2017</td>
+<td>4</td>
+<td>You <mark>guys</mark> are a poop</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td><mark>this is one of the greatist</mark> edition</td>
+</tr>
+<tr>
+<td>07/05/2017</td>
+<td>1</td>
+<td>It seems like a rip off of Piano Tiles 2, but with laggy sound, not being able to pause. Lagging <mark>controls</mark>.   The music is fine, but constantly having it lagged like the music skips or mutes it's self.  I don't see how you can learn piano by the game...</td>
+</tr>
+<tr>
+<td>05/23/2017</td>
+<td>5</td>
+<td>I think game is awesome, it lags a little during the faster bits of the sped up songs. And, maybe you <mark>guys</mark>, the developers can add a feature where the game tells you how many "perfects, "Greats, "goods" and "cools" you have. Just a suggestion. Otherwise, all is awesome</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>5</td>
+<td>It's super fun an addictive but it'd be better if you added more songs like Beyonce or Kpop. And during gameplay, it'd be fabulous if you <mark>guys</mark> added a pause button so that we can pause it when we need to go use the washroom,grab something, etc. But the app is really great! Keep it up!</td>
+</tr>
+<tr>
+<td>11/02/2017</td>
+<td>5</td>
+<td>I loved it it was very good I don't know what to say because they were so good and because it was so good I have to write this a very high rate so you <mark>guys</mark> don't have any rate I can read it so I just have to say it was so good</td>
+</tr>
+<tr>
+<td>07/06/2017</td>
+<td>1</td>
+<td>It's a piece of unwanted garbage and  the <mark>controls</mark> are horrible</td>
+</tr>
+<tr>
+<td>05/06/2017</td>
+<td>4</td>
+<td>Its a fun little game <mark>testing</mark> your fingers</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>5</td>
+<td>Awesome game.. Helps <mark>release</mark> mental tension</td>
+</tr>
+<tr>
+<td>03/02/2017</td>
+<td>5</td>
+<td>It's a great new version of Piano Tiles 2 Magic Challenge known as Piano Idol. I really love it with different interface and also speeding songs. Try it <mark>guys</mark>!!!</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td>Best game to <mark>test</mark> your speed</td>
+</tr>
+<tr>
+<td>11/21/2017</td>
+<td>5</td>
+<td>This is amazing. I love the <mark>controls</mark>. The music is worth playing for. I'm at a complete loss for words on how much I love the game.</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>Piano tiles. I can <mark>focus</mark></td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>5</td>
+<td>This app is very good. It helps for <mark>focusing</mark></td>
+</tr>
+<tr>
+<td>09/16/2017</td>
+<td>5</td>
+<td>The graphics are pretty good for any piano game I've ever had.The gameplay is pretty amazing.The <mark>controls</mark> well they have a few problems here and there but other than that there ok.Now the game itself it great it's deffenitly a time passer!I hope you enjoy it too!!</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>Amazing game just a <mark>shame</mark> for the really annoying adverts but still 5/5 for me</td>
+</tr>
+<tr>
+<td>07/15/2017</td>
+<td>5</td>
+<td>I love how fast it goes it keeps me <mark>focused</mark></td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>3</td>
+<td>I like this game a whole lot. Unfortunately it feels like every other white tile tap game. Dont get me wrong i love classical music, but i feel that there should be modern music as well. Also other types of music (rock, rap, pop, country, ect.). Get the soul moving and the star ratings will jump. Not only that but you could sell new <mark>release</mark> songs for low cost of in game money that you can purchase. I know depending on the song i would buy it.</td>
+</tr>
+<tr>
+<td>04/16/2017</td>
+<td>5</td>
+<td>Perfect piano tile..i played it with calm because most of the songs while i play it feel so relax & <mark>piece</mark>..just have a bit lagging..,& i don't know why..hehe..btw.,nice game..</td>
+</tr>
+<tr>
+<td>07/10/2017</td>
+<td>5</td>
+<td>this game is much better... i liked this game...to be frank it has some problems with its <mark>controls</mark>... some time its iritating me.....</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I LOVE THIS GAME GREAT <mark>CONTROLS</mark> GRAPHICS AND PRETTY SONGS</td>
+</tr>
+<tr>
+<td>07/28/2017</td>
+<td>5</td>
+<td>Love it thank you <mark>guys</mark> for making this game it is awesome trust me you must download it</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>5</td>
+<td>Superb game loved it so much best game to <mark>control</mark> our mind from any thing.</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>1</td>
+<td>It frequently says I tapped somewhere i didnt, or wont even register a tap and will make me lose. I played the last 2 games, and this is the only time it happens, I even put on the thing that shows you on screen where you tapped, and the game just doesnt <mark>care</mark>. Needs to be fixed.</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>This is awesome it's a good it's a good game it helps you <mark>focus</mark> it's like energetic</td>
+</tr>
+<tr>
+<td>11/17/2017</td>
+<td>5</td>
+<td>It is good game we have be <mark>focus</mark> on the screen</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>It's really fun and it's easy to <mark>Control</mark></td>
+</tr>
+<tr>
+<td>05/19/2017</td>
+<td>5</td>
+<td>I think that this game is a amazing that I can't even begin to <mark>explain</mark> the addition I have to the game I really open to the game</td>
+</tr>
+<tr>
+<td>05/30/2017</td>
+<td>5</td>
+<td>I DON'T <mark>CARE</mark> I LOVE IT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</td>
+</tr>
+<tr>
+<td>07/26/2017</td>
+<td>5</td>
+<td>I really love the game , I love the you <mark>guys</mark> mix the music , its amazing, but p.s add a pause button please</td>
+</tr>
+<tr>
+<td>07/13/2017</td>
+<td>5</td>
+<td>Love it case it doesn't have bad <mark>control</mark> exactly what I was thinking</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>5</td>
+<td>I like it because it <mark>test</mark> my skills</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>It's amazing game you <mark>guys</mark> should really try it</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>I really love it and it soooooo cooool just be chill and...oh wait i got an idea i will just give the step to you <mark>guys</mark> is that good right?...i think it's good to you guys ok lets do it now 1.just be chill  2.just believe your self 3.and follow the tiles and tap  it and that's not all there is last one 4.if u battle to someone u know what to do just forget ur problem with them and fight them for ur destiny                 Thank You               For believing (kiss)</td>
+</tr>
+<tr>
+<td>10/11/2017</td>
+<td>5</td>
+<td>I love the music and the <mark>controls</mark></td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>Very Well Done. Hi There. This application is very,  very nice and excellent. I really appreciate you <mark>guys</mark>. Keep it up and Best of Luck....</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>Well i have some things that should be added to the game in the death battle thing there should be that when you miss a note you have to spectate the still alive players and a chat at the end for like me at the end i wanna say "gg <mark>guys</mark> hit me up for remach." i mean love the game but these two things would improve the game a lot.</td>
+</tr>
+<tr>
+<td>10/29/2017</td>
+<td>5</td>
+<td>I love this game an good <mark>controls</mark>.</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>1</td>
+<td>what the heckkk man this game sucks the only reason this sucks is the moron <mark>controlls</mark> and the stupid gameplay i almost killed my ipad because of the game</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>It's ok but not really my type😕 I like it a little and well the music is beautiful but it's kinda hard to <mark>control</mark> and it's just that I hate it and like it and what I'm trying to say is that I'm in between the hate feeling and the like feeling anyways this is still a great game though.</td>
+</tr>
+<tr>
+<td>10/09/2017</td>
+<td>5</td>
+<td>Great game, great music. Perfect game to pass time! Tap tap rock has got nothing on these <mark>guys</mark></td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>It's a nice game with good <mark>control's</mark>  I loved it</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>It's a fun game for spare time when your on break after work it's really fun to play the <mark>controls</mark> are great this game is amazing it really practice your time and how you can beat your other scores</td>
+</tr>
+<tr>
+<td>11/14/2017</td>
+<td>5</td>
+<td>I dont really rate games but for this game im personally telling you <mark>guys</mark> to play it. Its really fun and quite a great geat game.  I love it as per from my gamer point of view 😊😍😍</td>
+</tr>
+<tr>
+<td>07/08/2017</td>
+<td>3</td>
+<td>Can you <mark>guys</mark> stop pushing songs further away if they were already unlocked. In My Heart and Dancing River were already unlocked and favorited, now I have to wait til I get to level 53? That's not very fair.</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>5</td>
+<td>Keeps me <mark>focused</mark></td>
+</tr>
+<tr>
+<td>03/24/2017</td>
+<td>2</td>
+<td>Literally a copy of piano tiles 2, so many others like that. If you want a good piano game just go to "Piano tiles 2" much more content, you don't get ads after every game. Plus you get more songs you know. The only thing I enjoyed from this was the guitar <mark>based</mark> songs, kind of.</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>4</td>
+<td>Amazing game ,,,,,  I like to play this game because the graphics and <mark>controls</mark> are amazingly awesome and just keep it uppp !!!!</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>Its graphics and <mark>controls</mark> are very good</td>
+</tr>
+<tr>
+<td>04/02/2017</td>
+<td>5</td>
+<td>It is a great way to <mark>control</mark> your nervs</td>
+</tr>
+<tr>
+<td>04/01/2017</td>
+<td>5</td>
+<td>I love this game but the <mark>controls</mark> could be Better</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>I love this game. It calms me down so easily. The only thing though, is probably the first song. Maybe make it a bit slower to understand the <mark>controls</mark>.</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>4</td>
+<td>This game is amazing <mark>shame</mark> about the adverts but apart from that it's great and the speed it goes keeps you on your toes 😊</td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>4</td>
+<td>I like this game very much but the <mark>controls</mark> were not good ♥️♥️</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>3</td>
+<td>U <mark>guys</mark> should have more challenges</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>OMG we get to play with another <mark>guy</mark> and I got a boy friend from this app😆☺☺☺😸😸😸😄💕💑💌💌</td>
+</tr>
+<tr>
+<td>11/11/2017</td>
+<td>5</td>
+<td>Love it <mark>guys</mark> download it it is awsome</td>
+</tr>
+<tr>
+<td>05/05/2017</td>
+<td>5</td>
+<td>I love this game so much. It has great music awesome graphics and it is super easy to <mark>control</mark>. I totally recommend this game</td>
+</tr>
+<tr>
+<td>06/30/2017</td>
+<td>5</td>
+<td>Sooo addictive and fun and really helps people like me who have problems <mark>focusing</mark> and keeping our hands still</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>5</td>
+<td>I think this is a great game and will always be for how this game is and <mark>deserves</mark> more people</td>
+</tr>
+<tr>
+<td>10/15/2017</td>
+<td>5</td>
+<td>it give me more <mark>care</mark> about FAST</td>
+</tr>
+<tr>
+<td>10/08/2017</td>
+<td>5</td>
+<td>You <mark>guys</mark> made the best music game</td>
+</tr>
+<tr>
+<td>11/05/2017</td>
+<td>5</td>
+<td>It good could work on the <mark>controls</mark> a bit</td>
+</tr>
+<tr>
+<td>04/20/2017</td>
+<td>5</td>
+<td>Don't be the <mark>guy</mark> that says there isn't even 50 countries have not played the game but I love it</td>
+</tr>
+<tr>
+<td>07/22/2017</td>
+<td>2</td>
+<td>You can't <mark>control</mark> it very well ! ... If u tap to the right place the game automatically taps it to the wrong place 😩 is so annoying when it does this 😤  but the rest of the game is okey , the music is okey too 😊</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>5</td>
+<td>Their music is really good and their <mark>controls</mark> are awesome and I just love it.</td>
+</tr>
+<tr>
+<td>10/16/2017</td>
+<td>4</td>
+<td>I like this game because it <mark>tests</mark> my reflexes 💜</td>
+</tr>
+<tr>
+<td>09/17/2017</td>
+<td>5</td>
+<td>It is the best it's soooo easy to <mark>Controls</mark></td>
+</tr>
+<tr>
+<td>06/23/2017</td>
+<td>5</td>
+<td>Best stress <mark>releaver</mark></td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td>It fun but when it tells you can tap the sides next to the black <mark>blocks</mark> i do it and it says i missed one other than that its a fun game</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>It's alright, but <mark>deserves</mark> 5/5✨</td>
+</tr>
+<tr>
+<td>04/07/2017</td>
+<td>5</td>
+<td>This app is amazing. I love the music for it and how smoothly it runs. Way to go <mark>guys</mark>☺</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>I love how you <mark>guys</mark> published songs for the people that play!!!</td>
+</tr>
+<tr>
+<td>03/26/2017</td>
+<td>5</td>
+<td>I saw this boy on the bus and he was playing this game and I was like can I play? And then I player and then I said in my mind..dang this is so addicting! I should download it on my tablet! And I downloaded it and I'm still playing it to this day! :D thank you <mark>guys</mark> for this amazing game!</td>
+</tr>
+<tr>
+<td>06/23/2017</td>
+<td>5</td>
+<td>U <mark>guys</mark> should add chests.Ex Legendary chest contains a popular song but its super rare to get. Golden chest gives u gems and a new song from a band and free chest give u gems and add free day</td>
+</tr>
+<tr>
+<td>05/05/2017</td>
+<td>4</td>
+<td>Hey <mark>guys</mark> Great music an all but one more srtar if you quit giving adverts and cold you maybe add the Imperial march? (Darth Vader theme song)</td>
+</tr>
+<tr>
+<td>10/26/2017</td>
+<td>1</td>
+<td>Piano tiles is way better , disappointed by the <mark>controls</mark> . Controls must be smooth.</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>4</td>
+<td>Would be great if you <mark>guys</mark> add an option to invite friends so we can play against each other, instead of being forced to join random players...</td>
+</tr>
+<tr>
+<td>07/01/2017</td>
+<td>5</td>
+<td>Amazing app love of so much <mark>guys</mark></td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>4</td>
+<td>Great game, some music is just a bit to slow, and game <mark>controls</mark> could improve some, though overall a very fun game!</td>
+</tr>
+<tr>
+<td>11/20/2017</td>
+<td>5</td>
+<td>Just super for but you think and <mark>deserve</mark> it</td>
+</tr>
+<tr>
+<td>07/21/2017</td>
+<td>5</td>
+<td>It just to much to <mark>explain</mark> with words</td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>4</td>
+<td>Only anomaly is that you can't play offline and the <mark>controls</mark> are poorer compared to piano tiles.. and yeah adds are a lot.. that's a huge problem.. otherwise from music point of view it's FAAAAR better than piano tiles</td>
+</tr>
+<tr>
+<td>10/02/2017</td>
+<td>5</td>
+<td>i think it is fun it helps your fingers <mark>focus</mark></td>
+</tr>
+<tr>
+<td>07/24/2017</td>
+<td>5</td>
+<td>I think that it's  interesting but the <mark>controls</mark> are sometimes hard but i still think that it's still interesting</td>
+</tr>
+<tr>
+<td>10/04/2017</td>
+<td>5</td>
+<td>I love music and this game completed my life. The <mark>controls</mark> are fast and difficult witch is ok. The graphics are really nice. And the gameplay its self is the best.love this game❤❤❤❤❤</td>
+</tr>
+<tr>
+<td>07/09/2017</td>
+<td>5</td>
+<td>It is an great game to improve your  way of <mark>focusing</mark></td>
+</tr>
+<tr>
+<td>03/23/2017</td>
+<td>4</td>
+<td>I love this game overall but the problem is my tablet is saying that the game is trying to get hold of my location is that the game or are u <mark>guys</mark> tying to find out where I live?</td>
+</tr>
+<tr>
+<td>11/21/2017</td>
+<td>5</td>
+<td>Its a great way to <mark>focus</mark>. And it's great for relaxing. The music is just too beautiful</td>
+</tr>
+<tr>
+<td>04/02/2017</td>
+<td>5</td>
+<td>Please play this game <mark>guys</mark> you have to.😉</td>
+</tr>
+<tr>
+<td>10/26/2017</td>
+<td>5</td>
+<td>It is a good game but it's <mark>control</mark> are very difficult to handle it is is like a situation</td>
+</tr>
+<tr>
+<td>09/21/2017</td>
+<td>5</td>
+<td>The music is relaxing I love it to <mark>pieces</mark>, thank you</td>
+</tr>
+<tr>
+<td>05/24/2017</td>
+<td>5</td>
+<td><mark>Tes</mark> game is fun</td>
+</tr>
+<tr>
+<td>07/07/2017</td>
+<td>5</td>
+<td>It's eye <mark>testing</mark> game...</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>3</td>
+<td>The was pretty and all, but WAY TOO MANY ADS. You clearly only <mark>care</mark> about money.-_-</td>
+</tr>
+<tr>
+<td>10/07/2017</td>
+<td>5</td>
+<td>Fantasticly made it love the instrumental music and how <mark>focused</mark> it gets you I can not live with out this game</td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>5</td>
+<td>I really love this game I can't <mark>explain</mark> it but when I play it I feel excepted no words can explain it it's a perfect game.</td>
+</tr>
+<tr>
+<td>11/26/2017</td>
+<td>5</td>
+<td>I think its good because if you want a little <mark>piece</mark> of music you can just tap on this app</td>
+</tr>
+<tr>
+<td>07/11/2017</td>
+<td>4</td>
+<td>I love it!! But maybe could you <mark>guys</mark> add fnaf songs three days grace songs and all that type of stuff and Aldo log in to google</td>
+</tr>
+<tr>
+<td>10/17/2017</td>
+<td>5</td>
+<td>I really like this one because that I like the music of the sound  OMG I can't even talk right know because I love this game but on one of the of this game that why do it goes slow the a little fast then super fast.  I think why you <mark>guys</mark> did that to make, it, be like a challenges</td>
+</tr>
+<tr>
+<td>11/01/2017</td>
+<td>5</td>
+<td>It <mark>test</mark> our speed</td>
+</tr>
+<tr>
+<td>10/20/2017</td>
+<td>2</td>
+<td>The music doesn't corrospond with the keys. It's just music in the background while you tap tiles. Also not sure if I like the orchestral music... <mark>based</mark> of piano tiles, and the tiles look like piano keys. So music should be piano music?</td>
+</tr>
+<tr>
+<td>05/15/2017</td>
+<td>5</td>
+<td>I like this game but sometimes the <mark>controls</mark> are not right</td>
+</tr>
+<tr>
+<td>09/16/2017</td>
+<td>5</td>
+<td>nnI love you <mark>guys</mark> ho</td>
+</tr>
+<tr>
+<td>04/18/2017</td>
+<td>4</td>
+<td>It's really fun and addictive GET THE GAME or you'll regret but be careful if your battery is down when the warning <mark>blocks</mark> the screen game over</td>
+</tr>
+<tr>
+<td>10/24/2017</td>
+<td>4</td>
+<td>Problems with the <mark>controls</mark> on my Nokia 3, I can't hit the double keys.   Other than that this game just keeps on getting better</td>
+</tr>
+<tr>
+<td>05/23/2017</td>
+<td>4</td>
+<td>Its a good game and it keeps you <mark>focus</mark></td>
+</tr>
+<tr>
+<td>04/09/2017</td>
+<td>5</td>
+<td>Really good stress <mark>relever</mark></td>
+</tr>
+<tr>
+<td>10/18/2017</td>
+<td>5</td>
+<td>Hi this my mom's daughter I just love this game u <mark>guys</mark> should make more I am very excited  to play this game and I beat like a lot of people in races in this game as well</td>
+</tr>
+<tr>
+<td>11/24/2017</td>
+<td>5</td>
+<td>I love this game and it helps me when my mom signs me up for <mark>pieno</mark>.</td>
+</tr>
+<tr>
+<td>04/21/2017</td>
+<td>5</td>
+<td>Good for <mark>focus</mark> people</td>
+</tr>
+<tr>
+<td>09/19/2017</td>
+<td>5</td>
+<td>Be nice ok <mark>guys</mark>!  😃😃😃😃😃😃😃😃</td>
+</tr>
+<tr>
+<td>11/23/2017</td>
+<td>5</td>
+<td>sky  Thurman Hannah muscleman Osman Landry Kent oh jacket Hannah embargo Whitney Houston you musical instruments to Jammu and Kashmir India and I will be in the future of our games are <mark>based</mark> on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games are based on the future of our games    Mi glitch Kristyn Malthus Kabbalah panelled Lanark 3tiles</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>Its just epic.No more words to <mark>explain</mark></td>
+</tr>
+<tr>
+<td>11/08/2017</td>
+<td>5</td>
+<td>Amazing good job <mark>guys</mark>/girls.</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>5</td>
+<td>Hi I just a new phone and this was the first app I got. I thought it was amazing the <mark>controls</mark> graphics and everything. It will keep you entertained for hours on end 🤗</td>
+</tr>
+<tr>
+<td>10/25/2017</td>
+<td>5</td>
+<td>Its so fun! The graphics the <mark>controls</mark> the gameplay the.......WHOLE GAME sooooo awesome!!!!!! :O</td>
+</tr>
+<tr>
+<td>11/13/2017</td>
+<td>5</td>
+<td>I love the endless part after you have gotten three crowns <mark>tests</mark> to see how far you can go and tests your agilaty and speed and coordination</td>
+</tr>
+<tr>
+<td>10/01/2017</td>
+<td>5</td>
+<td>Good game! It <mark>controls</mark> my anger from an Angry man to Happy Loving n Caring Person</td>
+</tr>
+<tr>
+<td>11/25/2017</td>
+<td>5</td>
+<td>I love this game <mark>release</mark> all the tension from mind...</td>
+</tr>
+<tr>
+<td>03/27/2017</td>
+<td>5</td>
+<td>It's a really fun game it <mark>tests</mark> your reaction speed</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>1</td>
+<td>Love almost everything about this all. Download it <mark>guy</mark>!</td>
+</tr>
+<tr>
+<td>06/16/2017</td>
+<td>5</td>
+<td>Amazing <mark>controls</mark></td>
+</tr>
+<tr>
+<td>07/19/2017</td>
+<td>5</td>
+<td>This game is amazing at <mark>testing</mark> your reactions and especially challenge mode</td>
+</tr>
+<tr>
+<td>10/28/2017</td>
+<td>5</td>
+<td>Its so awesome but could you <mark>guys</mark> do like some upgrade</td>
+</tr>
+<tr>
+<td>11/03/2017</td>
+<td>5</td>
+<td>I like it because it will <mark>test</mark> you skill</td>
+</tr>
+<tr>
+<td>06/17/2017</td>
+<td>4</td>
+<td>When I'm use this apps my all problem is <mark>release</mark>...and I love this apps</td>
+</tr>
+<tr>
+<td>07/16/2017</td>
+<td>5</td>
+<td>This is a really good game😃! I love the songs, they are so relaxing. And the <mark>controls</mark> are great. I recommend this game to people reading this as I think this is better than piano tiles!! I love it😍😘😄!!!</td>
+</tr>
+<tr>
+<td>06/22/2017</td>
+<td>5</td>
+<td>This is a very good game;Very <mark>testing</mark>. LOVE IT!</td>
+</tr>
+<tr>
+<td>11/07/2017</td>
+<td>5</td>
+<td>It is Challenging, Additive,Relaxing, Great music,and a Good time killer. I cant <mark>explain</mark> it if your looking for a game to entertain you get this app!😍</td>
+</tr>
+<tr>
+<td>03/31/2017</td>
+<td>4</td>
+<td>I liked the app espialy the <mark>controls</mark></td>
+</tr>
+<tr>
+<td>05/16/2017</td>
+<td>2</td>
+<td>Game is good...but now I came across a different version of piano tile which is far more better than this copyright..... So instead of this piano tile...<mark>guys</mark> please try piano tile 2 by cheetah mobiles</td>
+</tr>
+<tr>
+<td>10/23/2017</td>
+<td>5</td>
+<td>Its amazing . Means it is the best game I ever had explored. when I get started with this game I did'nt to leave it. But the <mark>controls</mark> are not working nicely. So,please I reqest that this game's controls should be improved</td>
+</tr>
+<tr>
+<td>10/21/2017</td>
+<td>5</td>
+<td>Tricking up and amazing game Love you <mark>guys</mark></td>
+</tr>
+<tr>
+<td>09/12/2017</td>
+<td>4</td>
+<td>A little bit difficult untill I concentrate & <mark>Focus</mark>, then it's more fun.</td>
+</tr>
+<tr>
+<td>09/18/2017</td>
+<td>5</td>
+<td>Very good concentrate <mark>test</mark></td>
+</tr>
+<tr>
+<td>03/30/2017</td>
+<td>5</td>
+<td>I love it insept it wood be better if you made it Minecraft dert <mark>Blocks</mark></td>
+</tr>
+<tr>
+<td>11/12/2017</td>
+<td>5</td>
+<td>It helps me <mark>focus</mark>. I have add</td>
+</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="footer">
+		<p>Auburn University Software and Intelligent Systems Lab</p>
+		<p>Contact Information: Phong Vu - lenniel@auburn.edu</p>
+	</div>
+	<script>
+		function mySearchFunction() {
+			var input, filter, table, tr, td, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[2];
+				if (td) {
+					if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+		/* 
+		 Willmaster Table Sort
+		 Version 1.1
+		 August 17, 2016
+		 Updated GetDateSortingKey() to correctly sort two-digit months and days numbers with leading 0.
+		 Version 1.0, July 3, 2011
+		 
+		 Will Bontrager
+		 https://www.willmaster.com/
+		 Copyright 2011,2016 Will Bontrager Software, LLC
+		 
+		 This software is provided "AS IS," without 
+		 any warranty of any kind, without even any 
+		 implied warranty such as merchantability 
+		 or fitness for a particular purpose.
+		 Will Bontrager Software, LLC grants 
+		 you a royalty free license to use or 
+		 modify this software provided this 
+		 notice appears on all copies. 
+		 */
+		//
+		// One placed to customize - The id value of the table tag.
+		var TableIDvalue = "myTable";
+
+		//
+		//////////////////////////////////////
+		var TableLastSortedColumn = -1;
+		function SortTable() {
+			var sortColumn = parseInt(arguments[0]);
+			var type = arguments.length > 1 ? arguments[1] : 'T';
+			var dateformat = arguments.length > 2 ? arguments[2] : '';
+			var table = document.getElementById(TableIDvalue);
+			var tbody = table.getElementsByTagName("tbody")[0];
+			var rows = tbody.getElementsByTagName("tr");
+			var arrayOfRows = new Array();
+			type = type.toUpperCase();
+			dateformat = dateformat.toLowerCase();
+			for (var i = 0, len = rows.length; i < len; i++) {
+				arrayOfRows[i] = new Object;
+				arrayOfRows[i].oldIndex = i;
+				var celltext = rows[i].getElementsByTagName("td")[sortColumn].innerHTML
+						.replace(/<[^>]*>/g, "");
+				if (type == 'D') {
+					arrayOfRows[i].value = GetDateSortingKey(dateformat,
+							celltext);
+				} else {
+					var re = type == "N" ? /[^\.\-\+\d]/g : /[^a-zA-Z0-9]/g;
+					arrayOfRows[i].value = celltext.replace(re, "").substr(0,
+							25).toLowerCase();
+				}
+			}
+			if (sortColumn == TableLastSortedColumn) {
+				arrayOfRows.reverse();
+			} else {
+				TableLastSortedColumn = sortColumn;
+				switch (type) {
+				case "N":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				case "D":
+					arrayOfRows.sort(CompareRowOfNumbers);
+					break;
+				default:
+					arrayOfRows.sort(CompareRowOfText);
+				}
+			}
+			var newTableBody = document.createElement("tbody");
+			for (var i = 0, len = arrayOfRows.length; i < len; i++) {
+				newTableBody.appendChild(rows[arrayOfRows[i].oldIndex]
+						.cloneNode(true));
+			}
+			table.replaceChild(newTableBody, tbody);
+		} // function SortTable()
+
+		function CompareRowOfText(a, b) {
+			var aval = a.value;
+			var bval = b.value;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfText()
+
+		function CompareRowOfNumbers(a, b) {
+			var aval = /\d/.test(a.value) ? parseFloat(a.value) : 0;
+			var bval = /\d/.test(b.value) ? parseFloat(b.value) : 0;
+			return (aval == bval ? 0 : (aval > bval ? 1 : -1));
+		} // function CompareRowOfNumbers()
+
+		function GetDateSortingKey(format, text) {
+			if (format.length < 1) {
+				return "";
+			}
+			format = format.toLowerCase();
+			text = text.toLowerCase();
+			text = text.replace(/^[^a-z0-9]*/, "");
+			text = text.replace(/[^a-z0-9]*$/, "");
+			if (text.length < 1) {
+				return "";
+			}
+			text = text.replace(/[^a-z0-9]+/g, ",");
+			var date = text.split(",");
+			if (date.length < 3) {
+				return "";
+			}
+			var d = 0, m = 0, y = 0;
+			for (var i = 0; i < 3; i++) {
+				var ts = format.substr(i, 1);
+				if (ts == "d") {
+					d = date[i];
+				} else if (ts == "m") {
+					m = date[i];
+				} else if (ts == "y") {
+					y = date[i];
+				}
+			}
+			d = d.replace(/^0/, "");
+			if (d < 10) {
+				d = "0" + d;
+			}
+			if (/[a-z]/.test(m)) {
+				m = m.substr(0, 3);
+				switch (m) {
+				case "jan":
+					m = String(1);
+					break;
+				case "feb":
+					m = String(2);
+					break;
+				case "mar":
+					m = String(3);
+					break;
+				case "apr":
+					m = String(4);
+					break;
+				case "may":
+					m = String(5);
+					break;
+				case "jun":
+					m = String(6);
+					break;
+				case "jul":
+					m = String(7);
+					break;
+				case "aug":
+					m = String(8);
+					break;
+				case "sep":
+					m = String(9);
+					break;
+				case "oct":
+					m = String(10);
+					break;
+				case "nov":
+					m = String(11);
+					break;
+				case "dec":
+					m = String(12);
+					break;
+				default:
+					m = String(0);
+				}
+			}
+			m = m.replace(/^0/, "");
+			if (m < 10) {
+				m = "0" + m;
+			}
+			y = parseInt(y);
+			if (y < 100) {
+				y = parseInt(y) + 2000;
+			}
+			return "" + String(y) + "" + String(m) + "" + String(d) + "";
+		} // function GetDateSortingKey()
+	</script>
+</body>
+</html>
