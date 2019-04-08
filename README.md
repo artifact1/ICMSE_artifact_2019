@@ -23,7 +23,7 @@ Minimum requirement
 ### Extracting opinions
 1a. If you have the folder that contains compatible data for MARP, you can choose it as your "Data Folder"
 
-![Step 1](https://github.com/artifact1/MARP_ICSME2019/blob/master/MARPstart.png)
+![Step 1](https://github.com/artifact1/ICMSE_artifact_2019/blob/master/MARPstart.png)
 
 1b. If you only have raw review data, first you will need to convert it into our .csv format (UTF-8, default separator). An example of the csv file can be found in the running package. Click on the "Import CSV" button to import it to an empty data folder of your choice. You only have to import once, next time you only need step 1a.
 
@@ -47,10 +47,10 @@ The mined patterns:
 
 This is how the final results should look like:
 
-![result](https://github.com/artifact1/MARP_ICSME2019/blob/master/exampleResult1.png)
+![result](https://github.com/artifact1/ICMSE_artifact_2019/blob/master/exampleResult1.png)
 
 # Bugs note
-We have yet to release this version to the public for testing, therefore, some bugs may still occur when you run it on your computer environment. In case you cannot run the program, we would like to invite you to look at the example results in here [examples](https://github.com/artifact1/MARP_ICSME2019/tree/master/exampleResults/MagicTiles) to see what should be expected from MARP.
+We have yet to release this version to the public for testing, therefore, some bugs may still occur when you run it on your computer environment. In case you cannot run the program, we would like to invite you to look at the example results in here [examples](https://github.com/artifact1/ICMSE_artifact_2019/tree/master/exampleResults/MagicTiles) to see what should be expected from MARP.
   
 ## Data
 1. Our vocabulary data is stored under MARPRunningPackage\dictionary\baseWord. The folder contains:
